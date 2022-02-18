@@ -1,0 +1,118 @@
+/* === MOBILE FIRST === */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background: #eee;
+  /* 1 em is what I've defined in the body
+  Use em because you can change the em value once in the body
+   */
+  font-size: 18px;
+}
+
+/* h1, h2, h3, p {
+  margin-bottom: 1em;
+} */
+
+.parent {
+  width: 100%;
+  /* min-height:100vh;
+  height:auto; */
+  padding: 1em;
+  /* This allows the height to be bigger than 100vh if needed */
+  background:tomato;
+
+  display:flex;
+  flex-flow: column wrap;
+  padding: 1em 1em .2em;
+}
+
+figure {
+  margin-bottom: 1em;
+}
+
+figure > img {
+  width: 100%;
+}
+
+.art {
+  width: 100%;
+  min-height:50vh;
+  height:auto;
+  /* This allows the height to be bigger than 100vh if needed */
+  padding: 1em;
+}
+
+.art article {
+  /* When I'm on a mobile I only want 1 column of text */
+  column-count: 1;
+}
+
+article h2 {
+  font-size: 1.8em;
+  text-transform: capitalize;
+  margin-bottom: .2em;
+}
+
+article p {
+  margin-bottom: 1.2em;
+  line-height: 1.3em;
+}
+
+.dark {
+  background: #333;
+  color: #fff;
+}
+
+/* === TABLET LAYOUT INHERITS FROM MOBILE 600PX 980PX === */
+@media only screen and (min-width: 600px) {
+  .parent {
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    min-height: 70vh;
+    height: auto;
+    padding: 0 1em;
+  }
+
+  figure {
+    width: 50%;
+    min-height: 250px;
+  }
+
+  .art article {
+    column-count: 2;
+    /* distance between columns */
+    column-gap: 2em;
+    column-rule: solid 1px #555
+  }
+
+
+}
+
+
+/* === DESKTOP LAYOUT INHERITS FROM MOBILE AND THE TABLET 600PX 980PX === */
+
+@media only screen and (min-width: 980px) {
+  .parent {
+    min-height: 50vh;
+  }
+
+  figure {
+    width: 20%;
+    height: auto;
+  }
+
+  .art article {
+    /* amount of text columns */
+    column-count: 3;
+    /* distance between columns */
+    column-gap: 2em;
+    column-rule: solid 1px #555
+  }
+}
