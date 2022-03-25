@@ -1,0 +1,276 @@
+/*********************************************
+CSS Styling for Final Website
+
+Palette:
+
+Hex                 RGB
+#033E8C          (3, 62, 140)
+#022859          (2, 40, 89)
+#0476D9          (4, 118, 217)
+#0D0D0D          (13, 13, 13)
+#D9D9D9          (217, 217, 217)
+
+
+**********************************************/
+
+body {
+  padding: 0;
+  margin: 0;
+  display: grid; /* Set up the grid and justify/align to center */
+  justify-content: center;
+  align-content: center;
+  font-family: 'Roboto', sans-serif;
+  /* background-color: #b0b2b7; */
+   /* background-image: linear-gradient(#0D0D0D ,#D9D9D9); */
+  background-color: black;
+  background-image: url("../assets/images/sine_wave.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+/* Nav */
+
+nav {
+  display: flex;
+  background:#E9EADB;
+  background-color: #E9EADB;
+}
+
+nav a:link {
+  color: #fff;
+  background: #011C40;
+  padding: 10px 20px;
+  text-decoration: none;
+  flex-grow: 1;
+  text-align: center;
+}
+
+nav a:visited {
+  color: white;
+}
+
+nav a:hover {
+  color: white;
+  background-color: #2A6BBF;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+
+/* Imag Overlay Intro */
+
+#starting-banner {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  width: 200%;
+  height: 200%;
+  position: relative;
+
+}
+
+#starting-banner > h1 {
+  font-size: 4em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  /* background: url('../assets/images/neurons.jpg') 50% 50% no-repeat;
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  -webkite-background-clip: text; */
+}
+
+
+/* Header & Section One */
+
+h1 {
+  font-family: Roboto;
+}
+
+#introduction {
+  background-color: #022859;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+#introduction p {
+  display: none;
+  color: white;
+  text-align: center;
+
+}
+
+#introduction h1 {
+  color: white;
+  text-align: center;
+}
+
+#introduction button {
+  justify-content: space-between;
+  /* text-align: center; */
+  width: 400px;
+}
+
+.ellipse {
+  background-color: #0476D9;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  display: flex;
+  position: relative;
+  right: 50px;
+}
+
+.ellipse img:hover #introduction p {
+  display: block;
+
+}
+
+#introduction button {
+  background-color: #0476D9;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* Animations */
+
+#feedback_arrows {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Rotate arrow */
+#feedback_arrows img{
+  width: 4em;
+  height: 4em;
+  animation: mymove 5s infinite;
+  animation-direction: reverse;
+}
+
+@keyframes mymove {
+  100% {transform: rotate(360deg);}
+}
+
+/* Section Two */
+
+#choice {
+  background-color: #033E8C;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+#choice h2 {
+  color: white;
+  text-align: center;
+}
+
+#choice img{
+
+}
+
+#choice p {
+  color: white;
+  text-align: center;
+}
+
+#choice button {
+  background-color: #0476D9;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+#animated-artifact {
+  bottom:15%;
+  position:relative;
+  -webkit-animation:linear infinite alternate;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 5s;
+}
+
+@-webkit-keyframes run {
+    0% { left: 0;}
+    100%{ left : 70%;}
+    10%{ left: 0;}
+}
+
+
+/* Section Three */
+
+#connect {
+  background-color: #022859;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+#connect h2 {
+  color: white;
+  text-align: center;
+}
+
+#connect img{
+
+}
+
+#connect p {
+  color: white;
+  text-align: center;
+}
+
+
+
+
+/* P5 Canvas */
+
+#sketch-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Animations  */
+
+.slide-up {
+	opacity: 0;
+	transform: translateY(2em);
+	transition: all .3s .5s ease-out;
+/*	will-change: all;*/
+}
