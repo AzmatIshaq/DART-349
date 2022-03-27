@@ -153,9 +153,12 @@ h1 {
   right: 50px;
 }
 
+.ellipse img {
+  /* box-shadow: 0px 5px 5px 2px  #9e9e9e; */
+}
+
 .ellipse img:hover #introduction p {
   /* display: block; */
-
 }
 
 #introduction button {
@@ -285,6 +288,49 @@ h1 {
   padding: 0em 2em;
 }
 
+
+/* Test Section */
+
+
+#test {
+  background-color: #033E8C;
+  width: 500px;
+  height: auto;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+#test h2 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+#test p {
+  color: white;
+  text-align: left;
+  padding: 0em 2em;
+  /* font-style: italic; */
+  /* color: #fdf91e; */
+}
+
+
+#test-model {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+
+#test-model img {
+    max-width: 300px;
+}
+
+
+
 /* P5 Canvas */
 
 #sketch-holder {
@@ -313,4 +359,17 @@ h1 {
 .slide-up.is-visible {
 	opacity: 1;
 	transform: translateY(0);
+}
+
+
+.slide-right {
+	opacity: 0;
+	transform: translateX(-10em) rotate(0);
+	transition: all .5s 1s ease-out;
+	will-change: all;
+}
+
+.slide-right.is-visible {
+	opacity: 1;
+	transform: translateX(0);
 }

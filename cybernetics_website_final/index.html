@@ -12,10 +12,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
 
   <!-- Library script(s) -->
+  <!-- p5 -->
   <script src="js/libraries/p5.min.js"></script>
   <script src="js/libraries/p5.sound.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
   <!-- My p5 sketch -->
   <script src="js/sketch.js"></script>
 
@@ -45,11 +50,11 @@
     <!-- Add margin instead of br or add padding for space top -->
 <br>
 <br>
-    <div class="ellipse">
+    <div class="ellipse slide-right show-on-scroll">
       <img src="assets/images/wiener_1.png" alt="wiener-image">
     </div>
 
-    <p> Have a seat. It's time for your examination on Cybernetics. Yes I am
+    <p class="show-on-scroll"> Have a seat. It's time for your examination on Cybernetics. Yes I am
         Norbert Wiener, but let's not get hung up on that.
 
         You're first question is...
@@ -117,19 +122,49 @@
   </section>
 
   <!-- Fourth Section -->
-  <!-- <section id="Test">
-
-    <div class="ellipse">
-      <img src="assets/images/wiener_cigar.png" alt="wiener-image">
-    </div>
+  <section id="test">
 
       <h2>Test Your Knowledge</h2>
+
+    <div class="ellipse">
+      <img src="assets/images/wiener_chalkboard.png" alt="wiener-image">
+    </div>
+
+
 
       <p>Assemble the feedback model in the correct order</p>
 
       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, quaerat, ducimus. Accusamus enim debitis quae nulla assumenda odio saepe deserunt veniam laudantium velit, soluta iure repudiandae error! Nisi, praesentium, ea. </p>
 
-  </section> -->
+    <div>
+      <p>
+        input
+      </p>
+    </div>
+
+    <div>
+      <p>
+        process
+      </p>
+    </div>
+
+    <div>
+      <p>
+        output
+      </p>
+    </div>
+
+    <div>
+      <p>
+        feedback
+      </p>
+    </div>
+
+    <div id="test-model">
+      <img src="assets/images/feedback-model_tp_2.png" alt="wiener-image">
+    </div>
+
+  </section>
 
   <!-- Fifth Section -->
   <section>
