@@ -106,7 +106,7 @@ if (mouseX > 240 && mouseX < 260 && mouseY > 240 && mouseY < 260) {
   fill(13, 13, 13);
   textSize(22);
   textAlign(CENTER, CENTER);
-  text('Congratulations, you just demonstrated a cybernetic system in action!', 150, 240);
+  text('Nice course correction!', width / 2 , height / 2);
   pop();
 }
 

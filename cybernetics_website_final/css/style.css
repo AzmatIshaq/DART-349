@@ -347,6 +347,73 @@ h1 {
 }
 
 
+/*  */
+
+#cybernetics-levels {
+  background-color: #022859;
+  width: 500px;
+  height: auto;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+#cybernetics-levels h2 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+#cybernetics-levels p {
+  color: white;
+  text-align: left;
+  padding: 0em 2em;
+  /* font-style: italic; */
+  /* color: #fdf91e; */
+}
+
+#figurine-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+#figurine-container img {
+    max-width: 80px;
+
+}
+
+
+
+#conclusion {
+  background-color: #033E8C;
+  width: 500px;
+  height: auto;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+#conclusion h2 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+#conclusion p {
+  color: white;
+  text-align: left;
+  padding: 0em 2em;
+  /* font-style: italic; */
+  /* color: #fdf91e; */
+}
+
+
+
+
 /* Animations  */
 
 .slide-up {
