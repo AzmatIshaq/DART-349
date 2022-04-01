@@ -98,7 +98,7 @@ nav a:hover {
 
 h1 {
   /* font-family: 'PT Serif', serif; */
-  /* font-family: Roboto; */
+  font-family: Roboto;
   /* font-family: 'Secular One', sans-serif; */
   /* font-family: 'Abril Fatface', cursive; */
   /* font-family: 'Anton', sans-serif; */ */
@@ -128,13 +128,14 @@ h2 {
 #introduction {
   background-color: #022859;
   min-height: 500px;
-  max-height: auto;
+  /* max-height: auto; */
   height: auto;
   width: 500px;
   position: relative;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2em;
+  /* margin-bottom: 2em; */
+  padding-bottom: 3em;
 }
 
 #introduction p {
@@ -240,9 +241,11 @@ h2 {
 #feedback_arrows_1{
   width: 4em;
   height: 4em;
-  animation: mymove 8s infinite;
+  /* transform: translateX(100px); */
+  opacity: 0;
+  animation: mymove 4s infinite forwards;
   /* animation-iteration-count: 1; */
-  animation-direction: reverse;
+  /* animation-direction: reverse; */
 
 }
 
@@ -256,9 +259,10 @@ h2 {
 }
 
 @keyframes mymove {
-  0% {opacity: 1;}
-   50% {transform: rotate(180deg); opacity: 0;}
-    100% {transform: rotate(180deg); opacity: 0;}
+  0% {opacity: 0;}
+  10% {opacity: 1;}
+  100% {transform: rotate(-90deg); opacity: 0;}
+    /* 100% {transform: rotate(90deg); opacity: 0;} */
 }
 
 @keyframes mymove_2 {
@@ -327,7 +331,7 @@ h2 {
 
 
 #animated-artifact {
-  bottom:15%;
+  /* bottom:15%; */
   position:relative;
   -webkit-animation:linear infinite alternate;
   -webkit-animation-name: run;
@@ -369,6 +373,9 @@ h2 {
   padding: 0em 0em;
 }
 
+#found-message {
+  padding: 0em 2em;
+}
 
 /* Test Section */
 
@@ -406,9 +413,9 @@ h2 {
   margin-top: 2em;
 }
 
-
 #test-model img {
-    max-width: 300px;
+  width: 400px;
+  /* max-width: 300px; */
 }
 
 #test-solution-button-container {
@@ -437,18 +444,29 @@ h2 {
 }
 
 
-.test-model-text-container {
+/* .test-model-text-container {
   display: flex;
   align-items: center;
   justify-content: center;
 
-}
+} */
 
 .test-model-text {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  padding: 0.5em;
 }
+
+.test-model-text img {
+  width: 20%;
+  height: 10%;
+}
+
+/* .test-model-text p {
+
+} */
 
 #brain-circuits-test {
   max-width: 25%;
@@ -484,6 +502,7 @@ h2 {
   justify-content: center;
   align-items: center;
   /* display: none; */
+  padding-bottom: 3em;
 }
 
 #self-regulation h2 {
@@ -507,7 +526,7 @@ h2 {
   justify-content: center;
   margin-top: 2em;
 
-  position: relative;
+  /* position: relative; */
   animation: ver-rotate 5s infinite linear;
   @keyframes ver-rotate  {
   from
@@ -523,9 +542,42 @@ h2 {
 
 #figurine-container img {
 
-    max-width: 80px;
+    width:30%;
+    /* max-width: 80px; */
 
 }
+
+
+/* Sample animation */
+.main-div
+{
+background-image: -webkit-linear-gradient(45deg, #111 50%, #f7c942 50%);
+height: 200px;
+width: 200px;
+position: absolute;
+left: 0;
+right: 0;
+bottom:0;
+top:0;
+margin: auto;
+box-shadow: 0px 0px 10px 2px #000;
+animation: ver-rotate 5s infinite linear;
+}
+@keyframes ver-rotate
+{
+from
+{
+transform: rotateY(0deg);
+}
+to
+{
+transform: rotateY(360deg);
+}
+}
+
+
+
+
 
 
 
@@ -553,8 +605,6 @@ h2 {
   /* font-style: italic; */
   /* color: #fdf91e; */
 }
-
-
 
 
 /* Extra sections */
@@ -657,6 +707,17 @@ h2 {
   /* color: #fdf91e; */
 }
 
+/* Footer */
+
+.footer {
+  background-color: #022859;
+  width: 500px;
+  height: 200px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  /* display: none; */
+}
 
 
 
