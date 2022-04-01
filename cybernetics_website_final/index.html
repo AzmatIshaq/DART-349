@@ -9,10 +9,16 @@
 
   <!-- CSS stylesheet(s) -->
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+
+  <!-- Testing Fonts -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Arvo:wght@700&family=Inconsolata:wght@700&family=Patua+One&family=Secular+One&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Arvo:wght@700&family=Chango&family=Inconsolata:wght@700&family=Monofett&family=Patua+One&family=Secular+One&display=swap" rel="stylesheet">
 
   <!-- Library script(s) -->
   <!-- p5 -->
@@ -29,136 +35,154 @@
 <body>
 
   <!-- Nav -->
- <nav>
-   <a href="#">Home</a>
-   <!-- hashtag creates a null link -->
-   <a href="#">History</a>
-   <!-- <a href="https://azmatportfolio.tumblr.com/">portfolio</a> -->
-   <a href="#">Extra</a>
- </nav>
-<br>
-<!-- margin on bottom -->
+  <nav>
+    <a href="index.html">Home</a>
+    <!-- hashtag creates a null link -->
+    <a href="history.html">History</a>
+    <a href="#">Extra</a>
+  </nav>
+  <br>
+  <!-- margin on bottom -->
   <section id="starting-banner">
-    <header >
-    <!-- class="slide-up show-on-scroll" -->
-    <h1 class="slide-up show-on-scroll">CYBERNETICS</h1>
+    <header>
+      <!-- class="slide-up show-on-scroll" -->
+      <h1 class="slide-up show-on-scroll">CYBERNETICS</h1>
     </header>
   </section>
 
   <!-- First Section INTRODUCTION -->
   <section id="introduction">
     <!-- Add margin instead of br or add padding for space top -->
-<br>
-<br>
-    <div class="ellipse slide-right show-on-scroll">
-      <img src="assets/images/wiener_1.png" alt="wiener-image">
+    <br>
+    <br>
+    <div class="sub-header-section">
+      <div class="ellipse slide-right show-on-scroll">
+        <img src="assets/images/wiener_1.png" alt="wiener-image">
+      </div>
+
+      <p class="show-on-scroll"> Hello students. How about a quick course on Cybernetics? I am
+        Norbert Wiener, I originated the modern Cybernetics movement with my book:
+        <br>
+        <br>
+        <i>Cybernetics: Or Control and Communication in the Animal and the Machine</i>.
+        <br>
+        <br>
+        Bellow is a diagram of a homeostatic information system.
+      </p>
+
+    </div>
+    <div class="section-question">
+      <p>What does this animation represent?</p>
     </div>
 
-    <p class="show-on-scroll"> Hello student. How about a quick course on Cybernetics. I am
-        Norbert Wiener, and I am considered to father of Cybernetics, but let's not get hung up on that.
-
-        Bellow is a diagram of a homeostatic information system.
-        <br>
-        <br>
-        Do you know how this kind of system funtions?
-    </p>
-
-      <div id="feedback_arrows">
-        <img src="assets/images/input_arrow_blue.png" alt="arrow_image">
-        <img src="assets/images/feedback_arrows.png" alt="feedback_arrow_image">
-        <img src="assets/images/input_arrow_blue.png" alt="arrow_image">
-      </div>
+    <div id="feedback_arrows">
+      <img src="assets/images/input_arrow_blue.png" alt="arrow_image" id="feedback_arrows_1">
+      <img src="assets/images/feedback_arrows.png" alt="feedback_arrow_image" id="feedback_arrows_center">
+      <img src="assets/images/input_arrow_blue.png" alt="arrow_image" id="feedback_arrows_2">
+    </div>
 
     <div id="intro-buttons-container">
       <button class="button">I don't know?</button>
-      <button class="button">Feedback loops!</button>
+      <button class="button" id="feedback-reveal">Feedback loops!</button>
     </div>
   </section>
 
   <!-- Second Section CHOICE -->
   <section id="choice">
     <h2>Choice</h2>
-    <div class="ellipse">
-      <img src="assets/images/wiener_2.png" alt="wiener-image">
+    <div class="sub-header-section">
+      <div class="ellipse">
+        <img src="assets/images/wiener_2.png" alt="wiener-image">
+      </div>
+
+      <p>
+        Yes, it is feedback loops!
+        <br>
+        <br>
+        The ability to make choices and adjust based on feedback loops is what defines a cybernetic system. The term cyber is derived from the greek word "Kybernetes" meaning to steer a ship. Cybernetic systems function in a similar way..
+      </p>
     </div>
 
-    <p>
+    <div class="section-question">
 
-    Yes, it is feedback loops.
+      <p>Are you a cybernetic system?</p>
+    </div>
 
-    Furthermore, you're ability to make a choice, and adjust to your environemtn is what makes you a cybernetic system. The term cyber is derived from a greek word meaning to steer a ship. In that sense you, and most cybernetic systems, steer themselves back on track by making adjustments based on feedback.
+    <div id="choice-buttons-container">
+      <button class="button"> Yes </button>
+      <button class="button"> No</button>
+    </div>
 
-    For example make a choice from the following options:
-
-    Is Cybernetics based on the idea of course correction, much like a sailboat?
-    </p>
-
-  <div id="choice-buttons-container">
-    <button class="button"> Yes </button>
-    <button class="button"> No</button>
-  </div>
-
-    <span id = "animated-artifact">
-    <img src ="assets/images/sailboat.png" width = "100px" height ="100px">
-  </span>
+    <span id="animated-artifact">
+      <img src="assets/images/sailboat.png" width="100px" height="100px">
+    </span>
 
 
   </section>
 
   <!-- Third Section CONNECT -->
-  <section id="connect">
+  <section id="connect" class="slide-up show-on-scroll">
     <h2>Sense and Correct</h2>
-
-    <p>Can you find the hidden message in the sine wave? Hover over it and give it a try.</p>
-
-    <div class="ellipse">
-      <img src="assets/images/wiener_cigar.png" alt="wiener-image">
+    <div class="sub-header-section">
+      <div class="ellipse">
+        <img src="assets/images/wiener_cigar.png" alt="wiener-image">
+      </div>
+      <p>
+        Of course you are! This is because you can sense your environment and make corrections to achieve a desired objective. For example:
+      </p>
     </div>
+
+    <div class="section-question">
+      <p> Can you find the hidden message at the center of the sine wave? Hover over it and give it a try.</p>
+    </div>
+
     <!-- P5 Sketch -->
     <div id="sketch-holder"></div>
 
-    <p> In order to find the hidden message you took several attempts. You overshot the movement slightly and then had to adjust by going slower until you achieved your objective. This ability to sense and adapt to your environment is part of my understanding of Cybernetics.
-    <br>
-    Try making some interesting patterns with the sine wave. You will notice that same process of adjustment until you reach the desired pattern.
+    <p> Well done! In order to find the hidden message you probably overshot the movement slightly and had to adjust until you achieved the objective. This ability to sense and adapt to your environment is part of my understanding of Cybernetics.
+      <br>
+      Try making some interesting patterns with the sine wave. You will notice that same process of adjustment until you reach the desired pattern.
     </p>
 
   </section>
 
   <!-- Fourth Section -->
-  <section id="test">
+  <section id="test" class="slide-up show-on-scroll">
 
-      <h2>Test Your Knowledge</h2>
+    <h2>Test Your Knowledge</h2>
 
-    <div class="ellipse">
-      <img src="assets/images/wiener_chalkboard.png" alt="wiener-image">
+    <div class="sub-header-section">
+
+      <div class="ellipse">
+        <img src="assets/images/wiener_chalkboard.png" alt="wiener-image">
+      </div>
+
+      <div class="section-question">
+        <!-- <p>Test your knowldge</p> -->
+        <p>Drag the words onto the feedback model in the correct location</p>
+      </div>
+      <!-- <p>Now is a good time for a test!</p> -->
+
+      <!-- <img id="brain-circuits-test" src="assets/images/brain_circuits_no_colour.png" alt="brain-circuits"> -->
     </div>
 
-        <p>Now is a good time for a test!</p>
 
-      <p>Assemble the feedback model in the correct order</p>
-
-      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, quaerat, ducimus. Accusamus enim debitis quae nulla assumenda odio saepe deserunt veniam laudantium velit, soluta iure repudiandae error! Nisi, praesentium, ea. </p>
-
-    <div id="input">
-      <p>
+    <div class="test-model-text">
+      <p class="drag-model-text">
         input
       </p>
-    </div>
 
-    <div>
-      <p>
+      <p class="drag-model-text">
         process
       </p>
     </div>
 
-    <div>
-      <p>
+    <div class="test-model-text">
+      <p class="drag-model-text">
         output
       </p>
-    </div>
 
-    <div>
-      <p>
+      <p class="drag-model-text">
         feedback
       </p>
     </div>
@@ -167,28 +191,59 @@
       <img src="assets/images/feedback-model_tp_2.png" alt="wiener-image">
     </div>
 
+    <div id="test-solution-button-container">
+      <button>Click For Solution</button>
+    </div>
+
+
   </section>
 
   <!-- Fifth Section -->
-  <section id="cybernetics-levels">
+  <section id="self-regulation" class="slide-up show-on-scroll">
 
-  <P>
-    One of the key elements of a cybernetic system is that it is self regulating. For example, all of your neurons in your brains are operating without you needing to do anything. Furthermore they are assembling themselves according to input.
-  </p>
+    <h2>Self-Regulation</h2>
 
-  <P>
-  One way to think about this is to imagine the operation of a musicboc. The dancing figurine on top of the music box is not self regulating or adaptive. It doesn't sense anything and therefore can only do what it is directly programmed to do.
-  </p>
+    <div class="sub-header-section">
+      <div class="ellipse">
+        <img src="assets/images/wiener_3.png" alt="wiener-image">
+      </div>
+      <p>
+        One of the key elements of a cybernetic system is that it is also self regulating. For example, all of the neurons in your brain function without direct instructions from you.
+        <br>
+        <br>
+        Whereas something like a musicbox is not self-regulating.
+      </p>
 
-  <div id="figurine-container">
-  <img src="assets/images/musical-box.png" alt="music-box">
-  </div>
+    </div>
+    <div class="section-question">
+      <p>
+        Try clicking on the spinning dancer and note how the dancing figurine is not self regulating or adaptive. It doesn't sense anything and therefore can only do what it is directly programmed to do.
+      </p>
+    </div>
+
+    <div id="figurine-container">
+      <img src="assets/images/musical-box.png" alt="music-box">
+    </div>
 
   </section>
 
-<section id="conclusion">
+  <section id="conclusion" class="slide-up show-on-scroll">
 
-  <p>
+    <div class="sub-header-section">
+      <div class="ellipse">
+        <img src="assets/images/wiener_phone.png" alt="wiener-image">
+      </div>
+
+      <p>
+        We will have to continue this another time, John von Neuman keeps prank calling me.
+        <br>
+        <br>
+        Before you go, just remember that cybernetic systems are becoming more relevant in people's lives every day.
+        To learn more, checkout the History and Extra sections.
+      </p>
+    </div>
+
+    <!-- <p>
     There are those who claims there are levels to cybernetics.
 
     The first level is conceptualizing the framework for human and machine systems.
@@ -200,9 +255,48 @@
     We are beginning to see virtualization in areas of personal technological enhancement. As well as in medical innovations.
 
     For example:
-  </p>
+  </p> -->
 
-</section>
+  </section>
+
+
+  <!-- <section id="extra-1">
+
+    <h2> Extra 1</h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore doloremque, maiores. Quasi rerum, tempora eaque, officiis recusandae sed ullam consequuntur qui molestiae accusamus possimus corrupti consectetur quae iure animi ad.</p> -->
+
+  <!-- alternative: https://www.youtube.com/watch?v=m0NqZGTTL7E -->
+  <!-- <iframe width="420" height="315" src="https://www.youtube.com/embed/Vq5UBwVCFyc">
+    </iframe>
+  </section>
+
+  <section id="extra-2">
+    <h2>Extra 2</h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore doloremque, maiores. Quasi rerum, tempora eaque, officiis recusandae sed ullam consequuntur qui molestiae accusamus possimus corrupti consectetur quae iure animi ad.</p>
+  </section> -->
+
+  <!-- <section id="extra-3">
+    <h2>Extra 3</h2> -->
+
+  <!-- <video autoplay muted loop id="extra-3-video">
+  <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="staff-beer-feedback">
+</video> -->
+
+  <!-- <div class="video-container">
+  <video autoplay muted loop>
+    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
+  </video>
+  <div class="caption">
+    <h2>Your caption here</h2>
+  </div>
+</div> -->
+
+  <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore doloremque, maiores. Quasi rerum, tempora eaque, officiis recusandae sed ullam consequuntur qui molestiae accusamus possimus corrupti consectetur quae iure animi ad.</p>
+
+  </section> -->
+
 
   <!-- My script(s) -->
   <script src="js/script.js"></script>

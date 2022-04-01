@@ -5,16 +5,38 @@ var scroll = window.requestAnimationFrame ||
              // IE Fallback
              function(callback){ window.setTimeout(callback, 1000/60)};
 var elementsToShow = document.querySelectorAll('.show-on-scroll');
+elementsToShow.forEach(function (element) {
+  console.log(element.id)
+})
+
+let choicePressed = false;
 
 function customLoop() {
 
   elementsToShow.forEach(function (element) {
+
+    if((element.id === 'connect' && choicePressed === true) || element.id !== 'connect') {
+
+
     if (isElementInViewport(element)) {
       element.classList.add('is-visible');
 
     } else {
       element.classList.remove('is-visible');
     }
+  }
+
+  //   if((element.id === 'test' && choicePressed === true) || element.id !== 'test') {
+  //
+  //   if (isElementInViewport(element)) {
+  //     element.classList.add('is-visible');
+  //
+  //   } else {
+  //     element.classList.remove('is-visible');
+  //   }
+  // }
+
+
   });
 
   scroll(customLoop);
@@ -22,6 +44,13 @@ function customLoop() {
 
 // Call the loop for the first time
 customLoop();
+
+
+
+document.getElementById("feedback-reveal"). addEventListener("click", function(){
+  document.getElementById("choice").style.display = "block";
+  choicePressed = true;
+})
 
 // Helper function from: http://stackoverflow.com/a/7557433/274826
 function isElementInViewport(el) {
@@ -45,5 +74,5 @@ function isElementInViewport(el) {
 // jQuery
 
 // $( function() {
-  $( "#input" ).draggable();
+  $( ".drag-model-text" ).draggable();
 // } );
