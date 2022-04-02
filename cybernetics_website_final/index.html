@@ -18,7 +18,7 @@
 
   <!-- Testing Fonts -->
   <!-- <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Arvo:wght@700&family=Inconsolata:wght@700&family=Patua+One&family=Secular+One&display=swap" rel="stylesheet"> -->
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Arvo:wght@700&family=Chango&family=Inconsolata:wght@700&family=Monofett&family=Patua+One&family=Secular+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Arvo:wght@700&family=Chango&family=Gloria+Hallelujah&family=Inconsolata:wght@700&family=Monofett&family=Patua+One&family=Secular+One&display=swap" rel="stylesheet">
 
   <!-- Library script(s) -->
   <!-- p5 -->
@@ -38,20 +38,19 @@
   <nav>
     <a href="index.html">Home</a>
     <!-- hashtag creates a null link -->
-    <a href="history.html">History</a>
-    <a href="#">Extra</a>
+    <a href="history.html">Extras</a>
+    <a href="extra.html">Sources</a>
   </nav>
   <br>
-  <!-- margin on bottom -->
+
   <section id="starting-banner">
     <header>
-      <!-- class="slide-up show-on-scroll" -->
-      <h1 class="slide-up show-on-scroll">CYBERNETICS</h1>
+        <h1 class="slide-up show-on-scroll">CYBERNETICS</h1>
     </header>
   </section>
 
   <!-- First Section INTRODUCTION -->
-  <section id="introduction">
+  <section id="introduction" class="slide-up show-on-scroll">
     <!-- Add margin instead of br or add padding for space top -->
     <br>
     <br>
@@ -64,13 +63,25 @@
         Norbert Wiener, I originated the modern Cybernetics movement with my book:
         <br>
         <br>
-        <i>Cybernetics: Or Control and Communication in the Animal and the Machine</i>.
-        <br>
-        <br>
-        Bellow is a diagram of a homeostatic information system.
       </p>
-
     </div>
+  <!-- End of sub header section -->
+  <div class="show-on-scroll" id="book-section-image-container">
+    <a href="https://www.goodreads.com/book/show/294941.Cybernetics" target="_blank">  <img src="assets/images/wiener_book.jpg" alt="wiener-book"> </a>
+  </div>
+
+  <div id="book-section">
+    <p>
+    <i>Cybernetics: Or Control and Communication in the Animal and the Machine</i>.
+    </p>
+      <!-- <div>
+        <p>
+            Bellow is a diagram of a homeostatic information system.
+        </p>
+      </div> -->
+    </div>
+
+
     <div class="section-question">
       <p>What does this animation represent?</p>
     </div>
@@ -102,6 +113,8 @@
         The ability to make choices and adjust based on feedback loops is what defines a cybernetic system. The term cyber is derived from the greek word "Kybernetes" meaning to steer a ship. Cybernetic systems function in a similar way..
       </p>
     </div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
     <div class="section-question">
 
@@ -140,9 +153,9 @@
     <div id="sketch-holder"></div>
 
   <div  id="found-message">
-    <p> Well done! In order to find the hidden message you probably overshot the movement slightly and had to adjust until you achieved the objective. This ability to sense and adapt to your environment is part of my understanding of Cybernetics.
+    <p> Well done! To find the hidden message you probably overshot the movement slightly and had to adjust until you achieved the objective. This ability to sense and adapt to your environment is part of my understanding of Cybernetics.
       <br>
-      Try making some interesting patterns with the sine wave. You will notice that same process of adjustment until you reach the desired pattern.
+      <!-- Try making some interesting patterns with the sine wave. You will notice that same process of adjustment until you reach the desired pattern. -->
     </p>
   </div>
 
@@ -168,22 +181,30 @@
       <!-- <img id="brain-circuits-test" src="assets/images/brain_circuits_no_colour.png" alt="brain-circuits"> -->
     </div>
 
-  <!-- Test model text -->
-    <div class="test-model-text-1">
-      <img src="assets/images/input.png" alt="input-image" class="drag-model-text">
-      </img>
+    <!-- Test model text -->
+        <div class="test-model-text-1">
+          <div>
+          <img src="assets/images/input.png" alt="input-image" class="drag-model-text">
+          </img>
+          </div>
 
-      <img src="assets/images/output.png" alt="output-image" class="drag-model-text">
-      </img>
-    </div>
+          <div>
+          <img src="assets/images/output.png" alt="output-image" class="drag-model-text">
+          </img>
+        </div>
 
-    <div class="test-model-text-2">
-      <img src="assets/images/process.png" alt="process-image" class="drag-model-text">
-      </img>
+        <!-- </div> -->
 
-      <img src="assets/images/feedback.png" alt="feedback-image" class="drag-model-text">
-      </img>
-    </div>
+        <!-- <div class="test-model-text-2"> -->
+        <div>
+          <img src="assets/images/process.png" alt="process-image" class="drag-model-text">
+          </img>
+        </div>
+        <div>
+          <img src="assets/images/feedback.png" alt="feedback-image" class="drag-model-text">
+          </img>
+          </div>
+        </div>
 
   <!-- Test Model Image -->
     <div id="test-model">
@@ -217,13 +238,15 @@
 
     <div class="section-question">
       <p>
-        Try clicking on the spinning dancer and note how the dancing figurine is not self regulating or adaptive. It doesn't sense anything and therefore can only do what it is directly programmed to do.
+        Try clicking on the music box.
       </p>
     </div>
 
     <div id="figurine-container">
       <img src="assets/images/musical-box-black-white.png" alt="music-box">
     </div>
+
+    <p> Note how the dancing figurine is not self regulating or adaptive. It doesn't sense anything and therefore can only do what it was directly programmed to do.</p>
 
     <!-- <div class="main-div">
   </div> -->
@@ -245,7 +268,7 @@
         <br>
         <!-- Before you go, just remember that cybernetic systems are becoming more relevant in people's lives every day. -->
 
-        To learn more, checkout the History and Extra sections.
+        To learn more, check the Extras sections.
       </p>
     </div>
 
