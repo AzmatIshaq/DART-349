@@ -154,6 +154,10 @@ h2 {
   font-size: 2.6em;
 }
 
+.wiener-try-again {
+  display: none;
+}
+
 #introduction {
   background-color: #022859;
   min-height: 500px;
