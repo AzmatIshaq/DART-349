@@ -9,7 +9,7 @@ Hex                 RGB
 #0476D9          (4, 118, 217)
 #0D0D0D          (13, 13, 13)
 #D9D9D9          (217, 217, 217)
-
+#fdf91e          (253, 249, 30)
 
 **********************************************/
 
@@ -30,7 +30,7 @@ body {
 
 section p {
   line-height: 1.6;
-  letter-spacing: 1.4px;
+  letter-spacing: 1.2px;
   margin-left: -1em;
   margin-right: 1.8em;
   /* display: block; */
@@ -328,19 +328,21 @@ h2 {
   height: 4em;
   /* transform: translateX(100px); */
   opacity: 0;
-  animation: mymove 4s infinite forwards;
+  animation: mymove 3s infinite forwards;
   /* animation-iteration-count: 1; */
   /* animation-direction: reverse; */
+  transform: translateX(-80%);
 
 }
 
 #feedback_arrows_2{
   width: 4em;
   height: 4em;
-  animation: mymove_2 8s infinite;
+  animation: mymove_2 3s infinite;
   /* animation-iteration-count: 1; */
   /*animation-direction: reverse;*/
-  animation-delay: 4s;
+  animation-delay: 2s;
+  transform: translateX(80%);
 }
 
 @keyframes mymove {
@@ -351,9 +353,9 @@ h2 {
 }
 
 @keyframes mymove_2 {
-  0% {opacity: 1;}
-   50% {transform: rotate(360deg); opacity: 0;}
-   100% {transform: rotate(360deg); opacity: 0;}
+  0% {opacity: 0;}
+  10% {opacity: 1;}
+  100% {transform: rotate(-90deg); opacity: 0;}
 }
 
 @keyframes mymove_3 {
@@ -716,6 +718,7 @@ transform: rotateY(360deg);
 
 #extra-1 {
   background-color:#022859;
+  display: flex;
   width: 500px;
   height: auto;
   position: relative;
@@ -729,6 +732,12 @@ transform: rotateY(360deg);
   text-transform: uppercase;
 }
 
+#extra-1 img {
+  width: 50%;
+}
+
+
+
 
 #extra-1 p {
   color: white;
@@ -740,6 +749,7 @@ transform: rotateY(360deg);
 
 #extra-2 {
   background-color: #033E8C;
+  display: flex;
   width: 500px;
   height: auto;
   position: relative;
