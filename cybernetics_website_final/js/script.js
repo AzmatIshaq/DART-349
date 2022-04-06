@@ -95,6 +95,15 @@ function topFunction() {
 }
 
 
+// Reveal model solution
+
+document.getElementById("test-solution-button-container"). addEventListener("click", function(){
+  document.getElementById("test-model").style.display = "none";
+  document.getElementById("test-model-answers").style.display = "flex";
+  document.getElementsByClassName("drag-model-text-1").style.display = "none";
+})
+
+
 
 
 // jQuery

@@ -505,6 +505,18 @@ h2 {
   /* max-width: 300px; */
 }
 
+#test-model-answers {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+#test-model-answers img {
+  width: 400px;
+  /* max-width: 300px; */
+}
+
 #test-solution-button-container {
   display: flex;
   align-items: center;
