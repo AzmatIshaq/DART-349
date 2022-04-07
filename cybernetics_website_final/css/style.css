@@ -891,62 +891,39 @@ transform: rotateY(360deg);
 
 /* Extra sections */
 
-#extra-1 {
+.extras-styling {
   background-color:#022859;
   width: 500px;
   height: auto;
   position: relative;
 }
 
-#extra-1 h2 {
+.extras-styling p {
+  color: white;
+  text-align: left;
+  padding: 0em 2em;
+}
+
+.extras-styling h2 {
   color: white;
   text-align: center;
   text-transform: uppercase;
+}
+
+#extra-1 {
 }
 
 #extra-1 img {
   width: 22%;
 }
 
-#extra-1 p {
-  color: white;
-  text-align: left;
-  padding: 0em 2em;
-  /* font-style: italic; */
-  /* color: #fdf91e; */
-}
 
 #stafford-video {
 width: 100%;
 }
 
 #extra-2 {
-  background-color: #033E8C;
-
-  width: 500px;
-  height: auto;
-  position: relative;
-
 }
-
-#extra-2 h2 {
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-
-#extra-2 p {
-  color: white;
-  text-align: left;
-  padding: 0em 2em;
-  /* font-style: italic; */
-  /* color: #fdf91e; */
-}
-
-
-
-
 
 /* #extra-3-video {
   position: fixed;
@@ -982,21 +959,6 @@ width: 100%;
   align-items: center;
 }
 
-#extra-3 h2 {
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-
-#extra-3 p {
-  color: white;
-  text-align: left;
-  padding: 0em 2em;
-  /* font-style: italic; */
-  /* color: #fdf91e; */
-}
-
 #extra-3 img {
   width: 75%;
 }
@@ -1028,19 +990,34 @@ width: 100%;
 
 /* Source Page */
 
-#sources-1 {
+.sources-styling {
   background-color:#022859;
   width: 500px;
   height: auto;
   position: relative;
 }
 
-#sources-2 {
-  background-color:#022859;
-  width: 500px;
-  height: auto;
-  position: relative;
+.sources-styling p {
+  color: white;
+  text-align: left;
+  padding: 0em 2em;
 }
+
+.sources-styling h2 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#sources-1 {
+
+}
+
+#sources-2 {
+
+}
+
+
 
 
 /* Animations  */
