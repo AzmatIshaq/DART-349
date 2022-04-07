@@ -135,7 +135,7 @@ document.getElementById("test-solution-button-container").addEventListener("clic
 
 // Spinning figurine
 
-document.getElementById("figurine-container").addEventListener("click", function() {
+document.getElementById("music-box-container").addEventListener("click", function() {
 
   document.getElementById("figurine-container").classList.add("figurine-activate")
 
