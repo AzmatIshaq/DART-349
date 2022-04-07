@@ -63,7 +63,7 @@ section .section-question p {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: red;
+  background-color: #0476D9;
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -146,6 +146,7 @@ h1 {
 
 }
 
+
 h2 {
 
   font-family: 'Secular One', sans-serif;
@@ -154,12 +155,25 @@ h2 {
   font-size: 2.6em;
 }
 
+
+
+/* Styling incorrect answers */
+
+#dialog {
+  display: none;
+}
+
 .wiener-try-again {
   display: flex;
 }
 
-#dialog {
-  display: none;
+
+.ui-dialog {
+    left: 0;
+    outline: 0 none;
+    border: none;
+    color: black;
+
 }
 
 #introduction {
@@ -241,6 +255,14 @@ h2 {
   width: 100%;
   flex-direction: row;
   margin-left: 6.5em;
+
+}
+
+#book-section-image-container img:hover {
+  transform: scale(1.1);
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+
 }
 
 #book-section-image-container img {
@@ -248,6 +270,8 @@ h2 {
   align-items: center;
   align-content: center;
   justify-content: center;
+  transition: transform .2s;
+  margin-left: 10%;
 }
 
 /* .section-question { */
@@ -502,6 +526,7 @@ h2 {
   align-items: center;
   justify-content: center;
   margin-top: 2em;
+  margin-left: 10%;
 }
 
 #test-model img {
@@ -513,7 +538,8 @@ h2 {
   display: none;
   align-items: center;
   justify-content: center;
-  margin-top: 2em;
+  margin-top: 20%;
+  margin-left: 10%;
 }
 
 #test-model-answers img {
@@ -565,13 +591,22 @@ h2 {
 
 .test-model-text-1 div {
   /* background:red; */
-  margin-left:1%;
+  /* margin-right: -14%; */
   width:35%;
 }
 
 .test-model-text-1 div img{
   width:auto;
   height:4vh;
+  transition: transform .2s;
+}
+
+
+.test-model-text-1 div img:hover{
+
+  transform: scale(1.05);
+  -ms-transform: scale(1.05); /* IE 9 */
+  -webkit-transform: scale(1.09); /* Safari 3-8 */
 }
 
 
@@ -648,27 +683,40 @@ h2 {
   align-items: center;
   justify-content: center;
   margin-top: 2em;
-
+  margin-bottom: -3%;
   /* position: relative; */
   animation: ver-rotate 5s infinite linear;
   @keyframes ver-rotate  {
   from
-  {
-    transform: rotateY(0deg);
+    {
+      transform: rotateY(0deg);
+    }
+    to
+    {
+      transform: rotateY(360deg);
+    }
   }
-  to
-  {
-    transform: rotateY(360deg);
-  }
-}
 }
 
 #figurine-container img {
-
     width:30%;
     /* max-width: 80px; */
-
 }
+
+
+
+#music-box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1em;
+}
+
+#music-box-container img {
+    width:30%;
+    /* max-width: 80px; */
+}
+
 
 
 /* Sample animation */
@@ -701,7 +749,7 @@ transform: rotateY(360deg);
 
 
 
-
+/* Last section */
 
 
 #conclusion {
@@ -711,6 +759,10 @@ transform: rotateY(360deg);
   position: relative;
   justify-content: center;
   align-items: center;
+  background-image: url("../assets/images/neurons.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 5em;
   /* display: none; */
 }
 
@@ -842,6 +894,7 @@ transform: rotateY(360deg);
 
 .footer {
   background-color: #022859;
+  display: flex;
   width: 500px;
   height: 200px;
   position: relative;
@@ -849,6 +902,16 @@ transform: rotateY(360deg);
   align-items: center;
   margin-bottom: 7em;
   /* display: none; */
+}
+
+.footer img {
+  width: 75%;
+
+  /* position: absolute;
+  top: 40px;
+  bottom: 150px;
+  left: 25px;
+  z-index: 1; */
 }
 
 

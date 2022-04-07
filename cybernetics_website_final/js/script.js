@@ -2,25 +2,25 @@
 
 // Detect request animation frame
 var scroll = window.requestAnimationFrame ||
-             // IE Fallback
-             function(callback){ window.setTimeout(callback, 1000/60)};
+  // IE Fallback
+  function(callback) {
+    window.setTimeout(callback, 1000 / 60)
+  };
 var elementsToShow = document.querySelectorAll('.show-on-scroll');
-// elementsToShow.forEach(function (element) {
-//   console.log(element.id)
+
+var elementsToShow = document.querySelectorAll('.show-on-scroll');
+// elementsToShow.forEach(function (element,i) {
+//   console.log(i)
+//  console.log(element)
 // })
 
-var elementsToShow = document.querySelectorAll('.show-on-scroll');
-elementsToShow.forEach(function (element,i) {
-  console.log(i)
- console.log(element)
-})
+let choicePressed = true;
+let choicePressed2 = true;
 
-let choicePressed = false;
-let choicePressed2 = false;
-
+// Reveal sections based on user input and scrolling
 function customLoop() {
 
-  elementsToShow.forEach(function (element, i) {
+  elementsToShow.forEach(function(element, i) {
 
     if (i < 4) {
       if (isElementInViewport(element)) {
@@ -29,50 +29,33 @@ function customLoop() {
       } else {
         element.classList.remove('is-visible');
       }
+    } else if (element.id === 'choice' && choicePressed === true) {
+
+
+      if (isElementInViewport(element)) {
+        element.classList.add('is-visible');
+
+      } else {
+        element.classList.remove('is-visible');
+      }
+    } else if (element.id === 'connect' && choicePressed2 === true) {
+
+      if (isElementInViewport(element)) {
+        element.classList.add('is-visible');
+
+      } else {
+        element.classList.remove('is-visible');
+      }
+
+    } else if (choicePressed === true && choicePressed2 === true) {
+      if (isElementInViewport(element)) {
+        element.classList.add('is-visible');
+
+      } else {
+        element.classList.remove('is-visible');
+      }
+
     }
-
-    else if(element.id === 'choice' && choicePressed === true) {
-
-
-    if (isElementInViewport(element)) {
-      element.classList.add('is-visible');
-
-    } else {
-      element.classList.remove('is-visible');
-    }
-  }
-
-  else if (element.id === 'connect' && choicePressed2 === true) {
-
-        if (isElementInViewport(element)) {
-          element.classList.add('is-visible');
-
-        } else {
-          element.classList.remove('is-visible');
-        }
-
-  }
-
-  else if (choicePressed === true && choicePressed2 === true) {
-    if (isElementInViewport(element)) {
-      element.classList.add('is-visible');
-
-    } else {
-      element.classList.remove('is-visible');
-    }
-
-  }
-
-  //   if((element.id === 'test' && choicePressed === true) || element.id !== 'test') {
-  //
-  //   if (isElementInViewport(element)) {
-  //     element.classList.add('is-visible');
-  //
-  //   } else {
-  //     element.classList.remove('is-visible');
-  //   }
-  // }
-
 
   });
 
@@ -83,13 +66,12 @@ function customLoop() {
 customLoop();
 
 
-
-document.getElementById("feedback-reveal"). addEventListener("click", function(){
+document.getElementById("feedback-reveal").addEventListener("click", function() {
   document.getElementById("choice").style.display = "block";
   choicePressed = true;
 })
 
-document.getElementById("choice-yes"). addEventListener("click", function(){
+document.getElementById("choice-yes").addEventListener("click", function() {
   document.getElementById("connect").style.display = "block";
   choicePressed2 = true;
 })
@@ -102,12 +84,10 @@ function isElementInViewport(el) {
   }
   var rect = el.getBoundingClientRect();
   return (
-    (rect.top <= 0
-      && rect.bottom >= 0)
-    ||
+    (rect.top <= 0 &&
+      rect.bottom >= 0) ||
     (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.top <= (window.innerHeight || document.documentElement.clientHeight))
-    ||
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight)) ||
     (rect.top >= 0 &&
       rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
   );
@@ -115,12 +95,13 @@ function isElementInViewport(el) {
 
 
 // Back to top button
-
 //Get the button
 var mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {
+  scrollFunction()
+};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -137,23 +118,15 @@ function topFunction() {
 }
 
 
-// Reveal model solution
-//
-// document.getElementById("test-solution-button-container"). addEventListener("click", function(){
-//   document.getElementById("test-model").style.display = "none";
-//   document.getElementById("test-model-answers").style.display = "flex";
-//   document.getElementsByClassName("drag-model-text-1").style.display = "none";
-// })
+
 
 
 // Reveal model solution
 
+document.getElementById("test-solution-button-container").addEventListener("click", function() {
+  let modelList = document.getElementsByClassName("test-model-text-1");
 
-
-document.getElementById("test-solution-button-container"). addEventListener("click", function(){
-let modelList = document.getElementsByClassName("test-model-text-1");
-
-  for(let i = 0; i < modelList.length; i++) {
+  for (let i = 0; i < modelList.length; i++) {
     modelList[i].style.display = "none";
   }
 
@@ -163,17 +136,42 @@ let modelList = document.getElementsByClassName("test-model-text-1");
 })
 
 
+// Spinning figurine
+
+// document.getElementById("test-solution-button-container").addEventListener("click", function() {
+//
+//   document.getElementById("figurine-container").style = {
+//     animation: ver-rotate 5s infinite linear;
+//     @keyframes ver-rotate  {
+//     from
+//       {
+//         transform: rotateY(0deg);
+//       }
+//       to
+//       {
+//         transform: rotateY(360deg);
+//       }
+//     }
+//   }
+// })
+
+
 
 // jQuery
 
 // $( function() {
-  $( ".drag-model-text" ).draggable();
+$(".drag-model-text").draggable();
 // } );
 
 
 
-  document.getElementById("i-dont-know"). addEventListener("click", function(){
-    // document.getElementById("dialog").style.display = "block";
-    $( "#dialog" ).dialog();
+document.getElementById("i-dont-know").addEventListener("click", function() {
+  // document.getElementById("dialog").style.display = "block";
+  $("#dialog").dialog();
 
-  })
+})
+
+document.getElementById("choice-no").addEventListener("click", function() {
+  // document.getElementById("dialog").style.display = "block";
+  $("#dialog").dialog();
+})
