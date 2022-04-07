@@ -64,11 +64,11 @@
         <img src="assets/images/wiener_1.png" alt="wiener-image">
       </div>
 
-      <p class="show-on-scroll"> Hello students. How about a quick course on Cybernetics? I am
-        Norbert Wiener, I originated the modern Cybernetics movement with my book:
-        <br>
-        <br>
-      </p>
+      <div id="intro-sub-header">
+        <p class="show-on-scroll"> Hello students. How about a quick course on Cybernetics? I am
+          Norbert Wiener, and I originated the modern Cybernetics movement with my book:
+        </p>
+      </div>
     </div>
 
   <!-- End of sub header section -->
@@ -88,7 +88,7 @@
     </div>
 
 
-    <div class="section-question">
+    <div class="section-question" id="intro-section-question">
       <p>What does this animation represent?</p>
     </div>
 
@@ -118,15 +118,17 @@
         Yes, it is feedback loops!
         <br>
         <br>
-        The ability to make choices and adjust based on feedback loops is what defines a cybernetic system. The term cyber is derived from the greek word "Kybernetes" meaning to steer a ship. Cybernetic systems function in a similar way..
+        The ability to make choices and adjust based on feedback is what defines a cybernetic system. The term cyber is derived from the greek word "Kybernetes" meaning to steer a ship. Cybernetic systems function similarly.
       </p>
     </div>
 
   <!-- Button to return to top -->
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-    <div class="section-question">
-      <p>Are you a cybernetic system?</p>
+    <div class="section-question" id="choice-section-question">
+      <p>Are you a cybernetic
+        <br>
+        system?</p>
     </div>
 
     <!-- Choice Buttons -->
@@ -154,7 +156,7 @@
       </p>
     </div>
 
-    <div class="section-question">
+    <div class="section-question" id="connect-section-question">
       <p> Find the hidden message at the center of the sine wave.</p>
     </div>
 
@@ -162,7 +164,7 @@
     <div id="sketch-holder"></div>
 
   <div  id="found-message">
-    <p> Well done! To find the hidden message you probably overshot the movement slightly and had to adjust until you achieved the objective. This ability to sense and adapt to your environment is part of my understanding of Cybernetics.
+    <p> To find the hidden message you probably overshot the movement slightly and had to adjust until you achieved the objective. This ability to sense and adapt is fundamental to Cybernetics systems.
       <br>
       <!-- Try making some interesting patterns with the sine wave. You will notice that same process of adjustment until you reach the desired pattern. -->
     </p>
@@ -181,7 +183,7 @@
         <img src="assets/images/wiener_chalkboard_LI.jpg" alt="wiener-image">
       </div>
 
-      <div class="section-question">
+      <div class="section-question" id="test-section-question">
         <!-- <p>Test your knowldge</p> -->
         <p>Drag the words onto the feedback model in the correct location</p>
       </div>
@@ -243,7 +245,7 @@
 
     </div>
 
-    <div class="section-question">
+    <div class="section-question" id ="regulation-section-question">
       <p>
         Try clicking on the music box.
       </p>
@@ -256,7 +258,9 @@
       <img src="assets/images/musical-box-no-figurine-2.png" alt="music-box">
     </div>
 
-    <p> Note how the dancing figurine is not self regulating or adaptive. It doesn't sense anything and therefore can only do what it was directly programmed to do.</p>
+    <div id="regulation-revealed-text">
+      <p> Note how the dancing figurine is not self regulating or adaptive. It doesn't sense anything and therefore can only do what it was directly programmed to do.</p>
+    </div>
 
   </section>
 
@@ -273,7 +277,7 @@
         That's it for today class! John von Neuman keeps prank calling me so we will have to continue this another time.
         <br>
         <br>
-        To learn more, check the Extras sections.
+        To learn more, check the <a href="extras.html">Extras</a> section.
       </p>
     </div>
 

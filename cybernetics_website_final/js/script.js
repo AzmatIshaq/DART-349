@@ -9,13 +9,10 @@ var scroll = window.requestAnimationFrame ||
 var elementsToShow = document.querySelectorAll('.show-on-scroll');
 
 var elementsToShow = document.querySelectorAll('.show-on-scroll');
-// elementsToShow.forEach(function (element,i) {
-//   console.log(i)
-//  console.log(element)
-// })
 
-let choicePressed = true;
-let choicePressed2 = true;
+
+let choicePressed = false;
+let choicePressed2 = false;
 
 // Reveal sections based on user input and scrolling
 function customLoop() {
@@ -159,15 +156,20 @@ document.getElementById("test-solution-button-container").addEventListener("clic
 
 // jQuery
 
+// Draggable items for test knowledge section
 // $( function() {
 $(".drag-model-text").draggable();
 // } );
 
 
+// Click events for user input in introduction section
 
 document.getElementById("i-dont-know").addEventListener("click", function() {
   // document.getElementById("dialog").style.display = "block";
-  $("#dialog").dialog();
+
+    $("#dialog").dialog({
+      modal: true,
+    });
 
 })
 
