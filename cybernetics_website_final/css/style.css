@@ -219,16 +219,28 @@ h2 {
 /* To affect the intro buttons container */
 #intro-buttons-container {
   margin-top: 60px;
-  /* align-items: center; */
+  /* display: flex;
+  align-items: center; */
 }
 
-/* To affect the intro buttons directly */
 
 #introduction button {
-  justify-content: space-between;
-  /* text-align: center; */
-  width: 400px;
+  background-color: #0476D9;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 10px;
+  /* margin: 4px 2px;
+  margin-left: 60px; */
+  cursor: pointer;
 }
+
 
 .sub-header-section {
   display: flex;
@@ -322,19 +334,9 @@ h2 {
   /* display: block; */
 }
 
-#introduction button {
-  background-color: #0476D9;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  margin-left: 60px;
-  cursor: pointer;
-}
+/* To affect the intro buttons directly */
+
+
 
 /* Feedback Arrows Animations */
 
@@ -374,7 +376,9 @@ h2 {
   /* animation-iteration-count: 1; */
   /*animation-direction: reverse;*/
   animation-delay: 2s;
-  transform: translateX(80%);
+  /* transform: translateX(80%); */
+  right: 0px;
+  position:relative;
 }
 
 @keyframes mymove {
@@ -387,7 +391,7 @@ h2 {
 @keyframes mymove_2 {
   0% {opacity: 0;}
   10% {opacity: 1;}
-  100% {transform: rotate(-90deg); opacity: 0;}
+  100% {transform: rotate(-90deg); opacity: 0; right: 140px;}
 }
 
 @keyframes mymove_3 {
@@ -722,8 +726,14 @@ h2 {
   margin-top: 2em;
   margin-bottom: -3%;
   /* position: relative; */
-  animation: ver-rotate 5s infinite linear;
-  @keyframes ver-rotate  {
+
+}
+
+.figurine-activate {
+  animation: figurine-rotate 5s infinite linear;
+}
+
+  @keyframes figurine-rotate  {
   from
     {
       transform: rotateY(0deg);
@@ -733,7 +743,7 @@ h2 {
       transform: rotateY(360deg);
     }
   }
-}
+
 
 #figurine-container img {
     width:30%;
@@ -771,6 +781,7 @@ margin: auto;
 box-shadow: 0px 0px 10px 2px #000;
 animation: ver-rotate 5s infinite linear;
 }
+
 @keyframes ver-rotate
 {
 from
@@ -1053,3 +1064,15 @@ width: 100%;
   from {background-color:#033E8C;}
   to {background-color: #0476D9;}
 }
+
+
+/* Media Queries */
+/*
+@media screen and (max-width:600px) {
+  /* .test-model-text-1 {
+    height: 2vh;
+    background-color: green;
+  } */ */
+  body{
+    background-color:red;
+  }

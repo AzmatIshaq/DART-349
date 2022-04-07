@@ -135,22 +135,11 @@ document.getElementById("test-solution-button-container").addEventListener("clic
 
 // Spinning figurine
 
-// document.getElementById("test-solution-button-container").addEventListener("click", function() {
-//
-//   document.getElementById("figurine-container").style = {
-//     animation: ver-rotate 5s infinite linear;
-//     @keyframes ver-rotate  {
-//     from
-//       {
-//         transform: rotateY(0deg);
-//       }
-//       to
-//       {
-//         transform: rotateY(360deg);
-//       }
-//     }
-//   }
-// })
+document.getElementById("figurine-container").addEventListener("click", function() {
+
+  document.getElementById("figurine-container").classList.add("figurine-activate")
+
+})
 
 
 
