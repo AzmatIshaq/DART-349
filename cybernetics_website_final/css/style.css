@@ -24,8 +24,8 @@ body {
   /* background-color: #b0b2b7; */
    /* background-image: linear-gradient(#0D0D0D ,#D9D9D9); */
   background-color: black;
-  background-image: url("../assets/images/sine_wave.png");
-  background-repeat: no-repeat;
+  background-image: url("../assets/images/sine_wave_2.png");
+  background-repeat: repeat-x;
   background-position: center;
 }
 
@@ -42,6 +42,7 @@ section p {
   letter-spacing: 1.2px;
   margin-left: -1em;
   margin-right: 1.8em;
+  font-size: 1.5em;
   /* display: block; */
 }
 
@@ -87,6 +88,7 @@ nav {
   display: flex;
   background:#E9EADB;
   background-color: #E9EADB;
+  font-size: 1.7em;
 }
 
 nav a:link {
@@ -156,7 +158,7 @@ h1 {
 }
 
 
-h2 {
+#choice h2, #connect h2, #self-regulation h2, #test h2, #conclusion h2, #sources-1 h2, #sources-2 h2{
   /* width: 100px;
   height: 100px; */
   font-family: 'Secular One', sans-serif;
@@ -250,15 +252,15 @@ h2 {
   display: flex;
 }
 
-#book-section {
+#book-section p {
   /* display: flex;
   align-items: left;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
   flex-direction: row; */
-  margin-left: 33%;
-  margin-right: 10%;
+  margin-left: 16.6%;
+  /* margin-right: 10%; */
   }
 
 
@@ -267,7 +269,6 @@ h2 {
   justify-content: center;
   margin-right: 7em; */
 }
-
 
 #book-section-image-container {
   display: flex;
@@ -297,16 +298,11 @@ h2 {
   margin-left: 10%;
 }
 
-/* .section-question { */
-  /* display: flex; */
-  /* test-align: center;
-  justify-content: center; */
-  /* text-align: left; */
-/* } */
 
 #intro-section-question {
-  margin-left: 29%;
-  margin-right: 7%;
+  margin-left: 22%;
+  /* margin-right: 7%; */
+  padding-right: 0;
 }
 
 #introduction .section-question p, #choice .section-question p,
@@ -314,7 +310,7 @@ h2 {
   color: yellow;
   /* display: block; */
   font-family: 'Gloria Hallelujah', cursive;
-  font-size: 1.7em;
+  font-size: 1.8em;
 }
 
 
@@ -440,8 +436,9 @@ h2 {
 }
 
 #choice-section-question {
-  margin-left: 28%;
+  margin-left: 15%;
   /* margin-right:-100%; */
+  padding-left: 0;
 }
 
 #choice-buttons-container {
@@ -512,8 +509,8 @@ h2 {
 }
 
 #connect-section-question {
-  margin-left: 23%;
-  margin-right: 2%;
+  margin-left: 13%;
+  margin-right: 5%;
 }
 
 #found-message {
@@ -580,7 +577,10 @@ h2 {
 }
 
 #test-model-answers img {
-  width: 400px;
+  width: 90%;
+  height: auto;
+  margin-bottom: 3%;
+  /* width: 400px; */
   /* max-width: 300px; */
 }
 
@@ -624,6 +624,7 @@ h2 {
   flex-direction: row;
  /* justify-content:space-around;*/
   padding: 0.5em;
+  margin-left: 3.5%;
 }
 
 .test-model-text-1 div {
@@ -716,13 +717,14 @@ h2 {
 }
 
 #regulation-section-question {
-  margin-left: 20%;
-  margin-right: 8%;
+  margin-left: 6%;
+  margin-right: 1%;
   margin-bottom: 3em;
 }
 
 #regulation-revealed-text {
-  margin-left: 20%;
+  margin-left: 13%;
+  display: none;
   /* margin-right: 8%; */
 }
 
@@ -853,7 +855,8 @@ transform: rotateY(360deg);
 
 #extras-starting-banner {
   display: flex;
-  background-color: white;
+  background-color: black;
+  color: white;
   align-items: center;
   justify-content: center;
   /* width: 200%; */
@@ -882,33 +885,32 @@ transform: rotateY(360deg);
 
 #extras-sub-header-container {
   /* padding-left: 15%; */
-    padding-left: 22%;
-  font-size: 3em;
+  padding-left: 22%;
+  font-size: 2.5em;
   font-family: 'Secular One', sans-serif;
   font-weight: 900;
   position: relative;
   z-index: 20;
-  background-color: #0476D9;
-  margin-top: 0%;
-  /* margin-top: 100px; */
+  background-color: black;
+  margin-top: -15.8%;
+  /* margin-bottom: -6.9%; */
+  /* margin-left:10px; */
+  /* padding-left:20px; */
 }
 
 
 #extras-sub-header {
   font-size: 32;
-  color:black;
-
-  margin-bottom:0;
+  color:white;
+  padding: 2em
+  margin-bottom:-20px;
   margin-top:0;
-
-  /* position: absolute; */
-  /* margin-left: 200px; */
+  padding-left:13px;
 }
 
-#extras-sub-header h2{
-  /* padding-left: 20%; */
+#extras-sub-header p {
+margin-left: 100px;
 }
-
 
 /* Extra sections */
 
@@ -922,7 +924,9 @@ transform: rotateY(360deg);
 .extras-styling p {
   color: white;
   text-align: left;
-  padding: 0em 2em;
+  /* padding: 0em 2em; */
+  margin-left: 13%;
+
 }
 
 .extras-styling h2 {
@@ -930,15 +934,18 @@ transform: rotateY(360deg);
   text-align: center;
   text-transform: uppercase;
   margin-top: 0%;
+  /* background-color: black; */
+  color: yellow;
+
+  font-family: 'Secular One', sans-serif;
+  font-size: 2.6em;
+
 }
 
 #extra-1 {
-  /* margin-top: 100px; */
+  /* padding-top: 5%; */
+  /* margin-top: 5%; */
 }
-
-/* #extra-1 img {
-  width: 100%;
-} */
 
 #history-mcculloch-pitts {
   display: flex;
@@ -964,32 +971,13 @@ transform: rotateY(360deg);
 }
 
 #extra-2 {
+  margin-top: 20%;
 }
 
-/* #extra-3-video {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-} */
-
-/* .video-container {
-  height: 300px;
-  width: 300px;
-  overflow: hidden;
-  position: relative;
+#medical-innovations {
+  margin-left: 8%;
+  margin-bottom: 1em;
 }
-
-.video-container video {
-  min-width: 100%;
-  min-height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-} */
-
 
 #extra-3 {
   background-color: #022859;
@@ -1002,6 +990,15 @@ transform: rotateY(360deg);
 
 #extra-3 img {
   width: 75%;
+}
+
+#body-mod-1 img {
+  margin-left: 13%;
+  margin-right: -10%;
+}
+
+#body-mod-2 img {
+  margin-left: 13%;
 }
 
 /* Footer */
@@ -1042,8 +1039,8 @@ transform: rotateY(360deg);
   color: white;
   text-align: left;
   padding: 0em 2em;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 8%;
+  margin-right: 8%;
 }
 
 .sources-styling h2 {
@@ -1059,6 +1056,7 @@ transform: rotateY(360deg);
 }
 
 /* Animations  */
+
 
 .slide-up {
 	opacity: 0;

@@ -138,6 +138,7 @@ document.getElementById("test-solution-button-container").addEventListener("clic
 document.getElementById("music-box-container").addEventListener("click", function() {
 
   document.getElementById("figurine-container").classList.add("figurine-activate")
+  document.getElementById("regulation-revealed-text").style.display = "block";
 
 })
 
