@@ -656,7 +656,6 @@ h2 {
   max-width: 25%;
   max-height: 25%;
   background-color: white;
-
 }
 
 
@@ -676,7 +675,7 @@ h2 {
 }
 
 
-/*  */
+/* Secontion 5 - Self Regulation */
 
 #self-regulation {
   background-color: #022859;
@@ -948,6 +947,7 @@ width: 100%;
 
 
 
+
 /* #extra-3-video {
   position: fixed;
   right: 0;
@@ -1025,6 +1025,22 @@ width: 100%;
   z-index: 1; */
 }
 
+
+/* Source Page */
+
+#sources-1 {
+  background-color:#022859;
+  width: 500px;
+  height: auto;
+  position: relative;
+}
+
+#sources-2 {
+  background-color:#022859;
+  width: 500px;
+  height: auto;
+  position: relative;
+}
 
 
 /* Animations  */
