@@ -341,7 +341,7 @@ h1 {
 #feedback_arrows_center{
   width: 4em;
   height: 4em;
-  animation: mymove_3 4s infinite;
+  animation: mymove_3 reverse 4s infinite;
   /* animation-iteration-count: 1; */
   /* animation-direction: reverse; */
   animation-timing-function: linear;
@@ -368,7 +368,7 @@ h1 {
 #feedback_arrows_2{
   width: 4em;
   height: 4em;
-  animation: mymove_2 3s infinite;
+  animation: mymove_2 reverse 3s infinite;
   /* animation-iteration-count: 1; */
   /*animation-direction: reverse;*/
   animation-delay: 2s;
@@ -387,7 +387,7 @@ h1 {
 @keyframes mymove_2 {
   0% {opacity: 0;}
   10% {opacity: 1;}
-  100% {transform: rotate(-90deg); opacity: 0; right: 140px;}
+  100% {transform: rotate(45deg); opacity: 0; right: 140px;}
 }
 
 @keyframes mymove_3 {
@@ -511,8 +511,8 @@ h1 {
 }
 
 #found-message {
-  margin-left: 22%;
-  margin-right: 12%;
+  margin-left: 20%;
+  margin-right: 2%;
   margin-bottom: 5%;
 }
 
