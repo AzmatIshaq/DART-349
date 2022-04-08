@@ -984,22 +984,8 @@ transform: rotateY(360deg);
   margin-left: 8%;
   margin-bottom: 1em;
 
-  width: 100%;
-  opacity: 1;
-  display: block;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
 }
 
-#medical-innovations:hover #medical-innovations{
-  opacity: 0.3;
-}
-
-#medical-innovations:hover .middle {
-  opacity: 1;
-}
 
 #extra-3 {
   background-color: #022859;
@@ -1014,13 +1000,40 @@ transform: rotateY(360deg);
   width: 75%;
 }
 
+.extra-3-button {
+  background-color: #0476D9;
+  border-radius: 4px;
+  padding: 15px;
+  /* border: none; */
+  font-size: 2em;
+  color:white;
+  text-decoration: none;
+}
+
+#extra-3-button-position{
+  top: 30%;
+}
+
 #body-mod-1 img {
   margin-left: 13%;
   margin-right: -10%;
 }
 
-#body-mod-2 img {
-  margin-left: 13%;
+#body-mod-1{
+  width: 100%;
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+#body-mod-1:hover img{
+  opacity: 0.3;
+}
+
+#body-mod-1:hover .middle {
+  opacity: 1;
 }
 
 /* Footer */
