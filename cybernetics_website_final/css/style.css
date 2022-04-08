@@ -29,13 +29,9 @@ body {
   background-position: center;
 }
 
-*:hover {
+/* *:hover {
    outline:3px lime solid;
- }
-
-/* section {
-} */
-
+ } */
 
 section p {
   line-height: 1.6;
@@ -219,7 +215,7 @@ h1 {
 }
 
 #intro-sub-header {
-    margin-right: 3%;
+    margin-right: 1%;
 }
 
 /* To affect the intro buttons container */
@@ -334,9 +330,6 @@ h1 {
   /* display: block; */
 }
 
-/* To affect the intro buttons directly */
-
-
 
 /* Feedback Arrows Animations */
 
@@ -433,6 +426,10 @@ h1 {
   padding: 0em 0em;
   /* font-style: italic; */
   /* color: #fdf91e; */
+}
+
+#choice p {
+  margin-right: 5%;
 }
 
 #choice-section-question {
@@ -642,27 +639,11 @@ h1 {
 
 .test-model-text-1 div img:hover{
 
-  transform: scale(1.05);
-  -ms-transform: scale(1.05); /* IE 9 */
-  -webkit-transform: scale(1.09); /* Safari 3-8 */
+  transform: scale(1.4);
+  -ms-transform: scale(1.4); /* IE 9 */
+  -webkit-transform: scale(1.4); /* Safari 3-8 */
 }
 
-
-
-/* .test-model-text-2 {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  flex-direction: row;
-  padding: 0.5em;
-}
-
-.test-model-text-2 img {
-  width: 10%;
-  height: 5%;
-} */
 
 #brain-circuits-test {
   max-width: 25%;
@@ -680,10 +661,6 @@ h1 {
   width: auto;
   height: auto;
   margin-top: 1em;
-  /* z-index: -10; */
-  /* border-style: solid; */
-  /* width: 100%;
-  height: 100%; */
 }
 
 
@@ -696,8 +673,11 @@ h1 {
   position: relative;
   justify-content: center;
   align-items: center;
-  /* display: none; */
   padding-bottom: 3em;
+}
+
+#regulation-sub-header {
+
 }
 
 #self-regulation h2 {
@@ -707,25 +687,24 @@ h1 {
   color:#fdf91e;
 }
 
-
 #self-regulation p {
   color: white;
   text-align: left;
-  padding: 0em 2em;
-  /* font-style: italic; */
-  /* color: #fdf91e; */
+  /* padding: 0em 2em; */
+  margin-left: -5%;
+  margin-right: 6%;
 }
 
 #regulation-section-question {
-  margin-left: 6%;
+  margin-left: 19%;
   margin-right: 1%;
   margin-bottom: 3em;
 }
 
 #regulation-revealed-text {
-  margin-left: 13%;
+  margin-left: 19%;
   display: none;
-  /* margin-right: 8%; */
+  margin-right: -1%;
 }
 
 #figurine-container {
@@ -855,15 +834,15 @@ transform: rotateY(360deg);
 
 #extras-starting-banner {
   display: flex;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   align-items: center;
   justify-content: center;
   /* width: 200%; */
   /* min-height: 10px; */
   margin-top: 0%;
-  padding-top: 10%;
-  height: 40%;
+  padding-top: 2%;
+  /* height: 90%; */
   /* max-height: 105%; */
   max-width:500px;
   /* height: auto; */
@@ -877,6 +856,7 @@ transform: rotateY(360deg);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   /* margin-bottom: 5px; */
+  margin-bottom: 0;
 }
 
 /* #extras-start-banner h2 {
@@ -891,8 +871,8 @@ transform: rotateY(360deg);
   font-weight: 900;
   position: relative;
   z-index: 20;
-  background-color: black;
-  margin-top: -15.8%;
+  background-color: white;
+  /* margin-top: -15.8%; */
   /* margin-bottom: -6.9%; */
   /* margin-left:10px; */
   /* padding-left:20px; */
@@ -901,15 +881,15 @@ transform: rotateY(360deg);
 
 #extras-sub-header {
   font-size: 32;
-  color:white;
-  padding: 2em
-  margin-bottom:-20px;
+  color:black;
+  /* padding: 2em */
+  margin-bottom: 0%;
   margin-top:0;
   padding-left:13px;
 }
 
 #extras-sub-header p {
-margin-left: 100px;
+/* margin-left: 100px; */
 }
 
 /* Extra sections */
@@ -936,47 +916,89 @@ margin-left: 100px;
   margin-top: 0%;
   /* background-color: black; */
   color: yellow;
-
   font-family: 'Secular One', sans-serif;
   font-size: 2.6em;
+  padding-top: 1em;
+  /* margin-top: 3em; */
 
 }
 
-#extra-1 {
+#extra-1 video {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
   /* padding-top: 5%; */
   /* margin-top: 5%; */
 }
 
-#history-mcculloch-pitts {
-  display: flex;
-  width: auto;
-  align-items: center;
-  justify-content: center;
-  margin-left: 18%;
+.extra-1-button {
+  background-color: #0476D9;
+  border-radius: 4px;
+  padding: 15px;
+  /* border: none; */
+  font-size: 2em;
+  color:white;
+  text-decoration: none;
 }
 
-#pitts img {
-  width: 62%;
-  /* height: 60%; */
-  /* object-fit: cover */
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#stafford-video:hover video {
+  opacity: 0.3;
+}
+
+#stafford-video:hover .middle {
+  opacity: 1;
 }
 
 #stafford-video {
-  margin-top:-28px;
   width: 100%;
+  /* margin-top:-28px; */
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
 
 #myVideo {
-  width:100%;
+  width:90%;
+  margin-left: 5%;
 }
 
 #extra-2 {
-  margin-top: 20%;
+  /* margin-top: 20%; */
+
 }
 
 #medical-innovations {
   margin-left: 8%;
   margin-bottom: 1em;
+
+  width: 100%;
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+}
+
+#medical-innovations:hover #medical-innovations{
+  opacity: 0.3;
+}
+
+#medical-innovations:hover .middle {
+  opacity: 1;
 }
 
 #extra-3 {
@@ -1039,8 +1061,8 @@ margin-left: 100px;
   color: white;
   text-align: left;
   padding: 0em 2em;
-  margin-left: 8%;
-  margin-right: 8%;
+  margin-left: 4%;
+  margin-right: 1%;
 }
 
 .sources-styling h2 {

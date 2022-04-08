@@ -48,15 +48,3 @@ function customLoop() {
 
 // Call the loop for the first time
 customLoop();
-
-
-// JS for Extras section
-// Hover effect
-
-// function on() {
-//   document.getElementById("overlay").style.display = "block";
-// }
-//
-// function off() {
-//   document.getElementById("overlay").style.display = "none";
-// }
