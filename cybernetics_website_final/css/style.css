@@ -17,12 +17,9 @@ body {
   padding: 0;
   margin: 0;
   display: grid; /* Set up the grid and justify/align to center */
-  /* grid-row-gap: 20%; */
   justify-content: center;
   align-content: center;
   font-family: 'Roboto', sans-serif;
-  /* background-color: #b0b2b7; */
-   /* background-image: linear-gradient(#0D0D0D ,#D9D9D9); */
   background-color: black;
   background-image: url("../assets/images/sine_wave_2.png");
   background-repeat: space repeat-x;
@@ -30,6 +27,7 @@ body {
   animation: animatedBackground 25s linear infinite;
 }
 
+/* Animation for background image */
 
 @keyframes animatedBackground {
   from {
@@ -40,21 +38,21 @@ body {
   }
 }
 
+/* Paragraphs font styling */
+
 section p {
   line-height: 1.6;
   letter-spacing: 1.2px;
   margin-left: -1em;
   margin-right: 1.8em;
   font-size: 1.5em;
-  /* display: block; */
 }
 
+/* Section Questions Styling */
+
 section .section-question {
-  /* display: flex; */
   align-items: center;
   justify-content: center;
-  /* margin-left: 4em;
-  margin-right: 1em; */
 }
 
 section .section-question p {
@@ -62,7 +60,6 @@ section .section-question p {
   letter-spacing: 2px;
   margin-left: 0;
   margin-right: 0;
-  /* display: block; */
 }
 
 /* Back to top button */
@@ -82,8 +79,6 @@ section .section-question p {
   padding: 15px;
   border-radius: 4px;
 }
-
-
 
 /* Nav */
 
@@ -112,27 +107,13 @@ nav a:hover {
   background-color: #2A6BBF;
 }
 
-/* Header */
-
-/* header {
-  display: flex;
-  background-color: white;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  position: relative;
-} */
-
-
-/* Imag Overlay Intro */
+/* Main Banner */
 
 #starting-banner {
   display: flex;
   background-color: white;
   align-items: center;
   justify-content: center;
-  /* width: 200%; */
   min-height: 105%;
   max-height: 105%;
   max-width:500px;
@@ -146,27 +127,21 @@ nav a:hover {
   text-transform: uppercase;
   letter-spacing: 0.08em;
 
-  /* background: url('../assets/images/neurons.jpg') 50% 50% no-repeat;
-  background-size: cover;
-  -webkit-text-fill-color: transparent;
-  -webkite-background-clip: text; */
 }
 
-/* Header & Section One */
+/* Header Styling */
 
 h1 {
-
   font-family: Roboto;
-
 }
 
+/* H2 Styling */
 
 #choice h2, #connect h2, #self-regulation h2, #test h2, #conclusion h2, #sources-1 h2, #sources-2 h2{
-  /* width: 100px;
-  height: 100px; */
   font-family: 'Secular One', sans-serif;
   font-size: 2.6em;
   background-color: #0476D9;
+
   /* Header animations */
   animation-name: example;
   animation-duration: 5s;
@@ -174,7 +149,8 @@ h1 {
   animation-iteration-count: infinite;
 }
 
-/* Styling incorrect answers */
+
+/* Styling for incorrect answers */
 
 #dialog {
   display: none;
@@ -190,21 +166,21 @@ h1 {
     outline: 0 none;
     border: none;
     color: black;
-
 }
+
+/* Introduction Section Styling */
 
 #introduction {
   background-color: #022859;
   min-height: 500px;
-  /* max-height: auto; */
   height: auto;
   width: 500px;
   position: relative;
   justify-content: center;
   align-items: center;
-  /* margin-bottom: 2em; */
   padding-bottom: 3em;
   line-height: 1.6;
+  padding-top: 8%;
 }
 
 #introduction p {
@@ -221,15 +197,15 @@ h1 {
   text-transform: uppercase;
 }
 
+/* Introduction Sub Header Styling */
+
 #intro-sub-header {
     margin-right: 1%;
 }
 
-/* To affect the intro buttons container */
+/* Intro Buttons Styling*/
 #intro-buttons-container {
   margin-top: 60px;
-  /* display: flex;
-  align-items: center; */
 }
 
 
@@ -251,26 +227,15 @@ h1 {
 }
 
 
+/* Styling for Sub Header class */
+
 .sub-header-section {
   display: flex;
 }
 
+/* Styling for Book Section */
 #book-section p {
-  /* display: flex;
-  align-items: left;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-  flex-direction: row; */
   margin-left: 16.6%;
-  /* margin-right: 10%; */
-  }
-
-
-#book-section p {
-  /* align-items: left;
-  justify-content: center;
-  margin-right: 7em; */
 }
 
 #book-section-image-container {
@@ -282,14 +247,12 @@ h1 {
   width: 100%;
   flex-direction: row;
   margin-left: 20%;
-
 }
 
 #book-section-image-container img:hover {
   transform: scale(1.1);
   -ms-transform: scale(1.1); /* IE 9 */
   -webkit-transform: scale(1.1); /* Safari 3-8 */
-
 }
 
 #book-section-image-container img {
@@ -301,12 +264,15 @@ h1 {
   margin-left: 10%;
 }
 
+/* Intro Question Section */
 
 #intro-section-question {
   margin-left: 22%;
   /* margin-right: 7%; */
   padding-right: 0;
 }
+
+/* Question Section Styling */
 
 #introduction .section-question p, #choice .section-question p,
 #connect .section-question p, #test .section-question p, #self-regulation .section-question p {
@@ -317,7 +283,7 @@ h1 {
 }
 
 
-/* Ellipse to manage Norbert Wiener images */
+/* Ellipse for Wiener Images */
 
 .ellipse {
   background-color: #0476D9;
@@ -327,14 +293,6 @@ h1 {
   display: flex;
   position: relative;
   right: 50px;
-}
-
-.ellipse img {
-  /* box-shadow: 0px 5px 5px 2px  #9e9e9e; */
-}
-
-.ellipse img:hover #introduction p {
-  /* display: block; */
 }
 
 
@@ -354,39 +312,24 @@ h1 {
   width: 4em;
   height: 4em;
   animation: mymove_3 reverse 4s infinite;
-  /* animation-iteration-count: 1; */
-  /* animation-direction: reverse; */
   animation-timing-function: linear;
   transform-origin: center center;
 }
 
-
-
-/* Rotate arrow */
-
 #feedback_arrows_1{
   width: 4em;
   height: 4em;
-  /* transform: translateX(100px); */
   opacity: 0;
   animation: mymove 3s infinite forwards;
-  /* animation-iteration-count: 1; */
-  /* animation-direction: reverse; */
-  /* transform: translateX(-80%); */
   left: 0px;
   position:relative;
-
-
 }
 
 #feedback_arrows_2{
   width: 4em;
   height: 4em;
   animation: mymove_2 reverse 3s infinite;
-  /* animation-iteration-count: 1; */
-  /*animation-direction: reverse;*/
   animation-delay: 2s;
-  /* transform: translateX(80%); */
   right: 0px;
   position:relative;
 }
@@ -408,7 +351,7 @@ h1 {
    100% {transform: rotate(360deg);}
 }
 
-/* Section Two */
+/* Section Two Choices*/
 
 #choice {
   background-color: #033E8C;
@@ -431,24 +374,17 @@ h1 {
 }
 
 #choice img{
-
 }
 
 #choice p {
   color: white;
   text-align: left;
   padding: 0em 0em;
-  /* font-style: italic; */
-  /* color: #fdf91e; */
-}
-
-#choice p {
   margin-right: 5%;
 }
 
 #choice-section-question {
   margin-left: 15%;
-  /* margin-right:-100%; */
   padding-left: 0;
 }
 
@@ -474,9 +410,9 @@ h1 {
   margin-bottom: 5%;
 }
 
+/* Sailboat Animation */
 
 #animated-artifact {
-  /* bottom:15%; */
   position:relative;
   -webkit-animation:linear infinite alternate;
   -webkit-animation-name: run;
@@ -490,7 +426,7 @@ h1 {
 }
 
 
-/* Section Three */
+/* Section Three Sense and Correct*/
 
 #connect {
   background-color: #022859;
@@ -503,14 +439,12 @@ h1 {
 }
 
 #connect h2 {
-  /* color: white; */
   color:#fdf91e;
   text-align: center;
   text-transform: uppercase;
 }
 
 #connect img{
-
 }
 
 #connect p {
@@ -531,8 +465,7 @@ h1 {
 }
 
 
-/* Test Section */
-
+/* Section Five Test Your Knowledge */
 
 #test {
   background-color: #033E8C;
@@ -541,12 +474,10 @@ h1 {
   position: relative;
   justify-content: center;
   align-items: center;
-  /* display: none; */
 }
 
 #test h2 {
   color: white;
-  /* color:#fdf91e; */
   text-align: center;
   text-transform: uppercase;
 }
@@ -556,12 +487,9 @@ h1 {
   color: white;
   text-align: left;
   padding: 0em 0em;
-  /* font-style: italic; */
-  /* color: #fdf91e; */
 }
 
 #test-section-question {
-  /* margin-left: */
   margin-right: 10%;
 }
 
@@ -607,24 +535,13 @@ h1 {
   color: white;
   width: 9em;
   height: 4.5em;
-  /* padding: 15px 32px; */
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  /* margin: 4px 2px; */
-  /* margin-left: 60px; */
   cursor: pointer;
   margin-bottom: 3em;
 }
-
-
-/* .test-model-text-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-} */
 
 .test-model-text-1 {
   display: flex;
@@ -633,14 +550,11 @@ h1 {
   flex-wrap: wrap;
   width: 100%;
   flex-direction: row;
- /* justify-content:space-around;*/
   padding: 0.5em;
   margin-left: 3.5%;
 }
 
 .test-model-text-1 div {
-  /* background:red; */
-  /* margin-right: -14%; */
   width:35%;
 }
 
@@ -650,21 +564,17 @@ h1 {
   transition: transform .2s;
 }
 
-
 .test-model-text-1 div img:hover{
-
   transform: scale(1.4);
   -ms-transform: scale(1.4); /* IE 9 */
   -webkit-transform: scale(1.4); /* Safari 3-8 */
 }
-
 
 #brain-circuits-test {
   max-width: 25%;
   max-height: 25%;
   background-color: white;
 }
-
 
 /* P5 Canvas */
 
@@ -678,7 +588,7 @@ h1 {
 }
 
 
-/* Secontion 5 - Self Regulation */
+/* Section Four Self Regulation */
 
 #self-regulation {
   background-color: #022859;
@@ -728,8 +638,6 @@ h1 {
   justify-content: center;
   margin-top: 2em;
   margin-bottom: -3%;
-  /* position: relative; */
-
 }
 
 .figurine-activate {
@@ -747,13 +655,9 @@ h1 {
     }
   }
 
-
 #figurine-container img {
     width:30%;
-    /* max-width: 80px; */
 }
-
-
 
 #music-box-container {
   display: flex;
@@ -764,12 +668,9 @@ h1 {
 
 #music-box-container img {
     width:30%;
-    /* max-width: 80px; */
 }
 
-
-
-/* Sample animation */
+/* Animation For Rotating Figurine */
 .main-div
 {
 background-image: -webkit-linear-gradient(45deg, #111 50%, #f7c942 50%);
@@ -787,21 +688,17 @@ animation: ver-rotate 5s infinite linear;
 
 @keyframes ver-rotate
 {
-from
-{
-transform: rotateY(0deg);
+  from
+  {
+  transform: rotateY(0deg);
+  }
+  to
+  {
+  transform: rotateY(360deg);
 }
-to
-{
-transform: rotateY(360deg);
-}
 }
 
-
-
-
-/* Last section */
-
+/* Last Section Intermission */
 
 #conclusion {
   background-color: #033E8C;
@@ -815,23 +712,18 @@ transform: rotateY(360deg);
   background-position: center;
   padding-bottom: 5em;
   margin-bottom: 5em;
-  /* display: none; */
 }
 
 #conclusion h2 {
-  /* color: white; */
-  color:#fdf91e;
+  color: #fdf91e;
   text-align: center;
   text-transform: uppercase;
 }
-
 
 #conclusion p {
   color: white;
   text-align: left;
   padding: 0em 2em;
-  /* font-style: italic; */
-  /*  */
 }
 
 #conclusion a {
@@ -846,6 +738,7 @@ transform: rotateY(360deg);
   -webkit-transform: scale(1.2); /* Safari 3-8 */
 }
 
+/* Extras Section Styling */
 
 #extras-starting-banner {
   display: flex;
@@ -853,16 +746,10 @@ transform: rotateY(360deg);
   color: black;
   align-items: center;
   justify-content: center;
-  /* width: 200%; */
-  /* min-height: 10px; */
   margin-top: 0%;
   padding-top: 2%;
-  /* height: 90%; */
-  /* max-height: 105%; */
   max-width:500px;
-  /* height: auto; */
   position: relative;
-  /* margin-bottom:0; */
 }
 
 
@@ -870,16 +757,10 @@ transform: rotateY(360deg);
   font-size: 4em;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  /* margin-bottom: 5px; */
   margin-bottom: 0;
 }
 
-/* #extras-start-banner h2 {
-  margin-left: 200px;
-} */
-
 #extras-sub-header-container {
-  /* padding-left: 15%; */
   padding-left: 22%;
   font-size: 2.5em;
   font-family: 'Secular One', sans-serif;
@@ -887,27 +768,21 @@ transform: rotateY(360deg);
   position: relative;
   z-index: 20;
   background-color: white;
-  /* margin-top: -15.8%; */
-  /* margin-bottom: -6.9%; */
-  /* margin-left:10px; */
-  /* padding-left:20px; */
 }
 
 
 #extras-sub-header {
   font-size: 32;
   color:black;
-  /* padding: 2em */
   margin-bottom: 0%;
   margin-top:0;
   padding-left:13px;
 }
 
 #extras-sub-header p {
-/* margin-left: 100px; */
 }
 
-/* Extra sections */
+/* Extras Classes */
 
 .extras-styling {
   background-color:#022859;
@@ -938,19 +813,18 @@ transform: rotateY(360deg);
 
 }
 
+/* Extras Section 1 */
+
 #extra-1 video {
   opacity: 1;
   transition: .5s ease;
   backface-visibility: hidden;
-  /* padding-top: 5%; */
-  /* margin-top: 5%; */
 }
 
 .extra-1-button {
   background-color: #0476D9;
   border-radius: 4px;
   padding: 15px;
-  /* border: none; */
   font-size: 2em;
   color:white;
   text-decoration: none;
@@ -987,19 +861,19 @@ transform: rotateY(360deg);
 
 #myVideo {
   width:104.1%;
-  /* margin-left: 7%; */
 }
 
-#extra-2 {
-  /* margin-top: 20%; */
 
+/* Extras Section 2 */
+
+#extra-2 {
 }
 
 #medical-innovations {
-  /* margin-left: 8%;
-  margin-bottom: 1em; */
 }
 
+
+/* Extras Section 3 */
 
 #extra-3 {
   background-color: #022859;
@@ -1020,7 +894,6 @@ transform: rotateY(360deg);
   background-color: #0476D9;
   border-radius: 4px;
   padding: 15px;
-  /* border: none; */
   font-size: 2em;
   color:white;
   text-decoration: none;
@@ -1031,8 +904,6 @@ transform: rotateY(360deg);
 }
 
 #body-mod-1 img {
-  /* margin-left: 9%;
-  margin-right: -10%; */
   width: 100%;
 }
 
@@ -1076,24 +947,18 @@ transform: rotateY(360deg);
   text-decoration: none;
   justify-content: center;
   align-items: center;
-  /* margin-left: 4em;
-  margin-right: 4em; */
-  /* margin-top: 10em; */
 }
 
 #footer-content-container a {
   width:100%;
-  color:white;
+color: yellow;
   text-decoration: none;
   margin-top: 2%;
   margin-left: 36%;
-  /* margin-left: 4em;
-  margin-right: 4em; */
-
 }
 
 
-/* Source Page */
+/* Sources Page */
 
 .sources-styling {
   background-color:#022859;
@@ -1124,10 +989,6 @@ transform: rotateY(360deg);
 #sources-2 {
 }
 
-/* #sources-list p {
-  margin-right: 40%;
-} */
-
 #sources-list {
   margin-right: 2%;
   word-wrap : break-word;
@@ -1136,12 +997,10 @@ transform: rotateY(360deg);
 
 /* Animations  */
 
-
 .slide-up {
 	opacity: 0;
 	transform: translateY(2em);
 	transition: all .5s .5s ease-out;
-/*	will-change: all;*/
 }
 
 .slide-up.is-visible {
@@ -1167,8 +1026,14 @@ transform: rotateY(360deg);
   to {background-color: #0476D9;}
 }
 
+/* Media Queries */
+
 @media only screen and (max-device-width: 600px){
   .test-model-text-1 div img {
     height: 10px;
+  }
+
+  #extras-sub-header-container {
+    margin-top: -0.2%;
   }
 }
