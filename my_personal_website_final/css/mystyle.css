@@ -80,7 +80,7 @@ header#course_header {
 }
 
 h1#header_assignments {
-  top: 7em;
+  top: 7.5em;
   position: absolute;
 }
 
@@ -117,6 +117,7 @@ section article#links_article {
   background: #F2B705;
   width: 100%;
   padding: 2em;
+  margin-top: 50px;
 }
 
 section article h2{
@@ -147,6 +148,12 @@ section aside h3 {
 section aside > img {
   width:70%;
   align-items: center;
+
+}
+
+section aside >img:hover {
+  transform: scale(1.2) translateY(-10px) rotate(-5deg);
+  filter: blur(1px) grayscale(90%);
 }
 
 section.gallery {
@@ -171,8 +178,16 @@ section.gallery {
   justify-content: center;
   align-items: center;
   margin-bottom: 1em;
+  margin-top: 50px;
 }
 
+div span {
+  transition: all 0.5s;
+}
+
+.gallery div:hover span{
+  opacity: 0;
+}
 
 section.gallery > div > img {
   background: #2A6BBF;
@@ -181,17 +196,26 @@ section.gallery > div > img {
   border-radius: 5%;
 }
 
+section.gallery > div > img:hover {
+  transform: scale(1.2) translateY(-10px);
+  box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.3);
+
+}
+
+
 section.gallery > div > a {
   text-decoration: none;
   color: white;
   font-size: 30px;
   margin-left: 1em;
+  transition: all 0.5s;
+  /* padding:1em; */
 }
 
 section.gallery > div > a:hover {
   color: white;
   background: #307CBF;
-  position: fixed;
+  /* position: fixed; */
   padding: 1em;
 }
 
@@ -226,4 +250,69 @@ footer {
   width: 100%;
   min-height: 30vh;
   height: auto;
+}
+
+
+/* ==== MOBILE ==== */
+
+@media (max-width: 600px) {
+
+  section#assignments {
+    margin-bottom: 0;
+  }
+
+  section aside > img {
+    width:300%;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-top: 0px;
+    top:0px;
+    bottom: 100px;
+  }
+}
+
+/* === ANIMATIONS FOR SCROLL BASED INTERACTION === */
+
+.slide-left {
+	opacity: 0;
+	transform: translateX(2em);
+	transition: all .5s .35s ease-out;
+	will-change: all;
+}
+
+.slide-left.is-visible {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.slide-up {
+	opacity: 0;
+	transform: translateY(2em);
+	transition: all .5s .5s ease-out;
+/*	will-change: all;*/
+}
+
+.slide-up.is-visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.fade-in {
+	opacity: 0;
+	transition: all 1s  ease-out;
+}
+.fade-in.is-visible {
+	opacity: 1;
+}
+
+.slide-right {
+	opacity: 0;
+	transform: translateX(-10em) rotate(0);
+	transition: all .5s 1s ease-out;
+	will-change: all;
+}
+
+.slide-right.is-visible {
+	opacity: 1;
+	transform: translateX(0) rotate(-10deg);
 }
