@@ -1,0 +1,229 @@
+/* ==== CSS RESET ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* ==== BODY INFO ==== */
+
+body {
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ==== NAV INFO ==== */
+
+nav {
+  display: flex;
+  background:#E9EADB;
+  background-color: #E9EADB;
+}
+
+nav a:link {
+  color: #fff;
+  background: #011C40;
+  padding: 10px 20px;
+  text-decoration: none;
+  flex-grow: 1;
+  text-align: center;
+}
+
+nav a:visited {
+  color: red;
+}
+
+nav a:hover {
+  color: white;
+  background-color: #2A6BBF;
+}
+
+/* ==== HEADER INFO ==== */
+
+header {
+  width: 100%;
+  height: 70vh;
+  background:#F2B705;
+  background-size: cover;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header#home {
+  width: 100%;
+  height: 70vh;
+  background: url(../images/concordia_ev2.jpg) no-repeat center center fixed;
+  background-size: cover;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header#course_header {
+  width: 100%;
+  height: auto;
+  background: url(../images/concordia_ev2.jpg) no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  padding-bottom: 10em;
+}
+
+h1#header_assignments {
+  top: 7em;
+  position: absolute;
+}
+
+
+header hgroup {
+  background-color: rgba(191, 83, 44, 0.5);
+  font-size: 2em;
+  text-align: center;
+  color: white;
+  padding: 1em;
+  margin: 0;
+  display: inline-block;
+}
+
+header hgroup:hover {
+  background-color: rgba(191, 83, 44, 0.6);
+}
+
+/* ==== SECTION INFO ==== */
+
+section.text {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+section article {
+  background: #F2B705;
+  width: 75%;
+  padding: 2em;
+}
+
+section article#links_article {
+  background: #F2B705;
+  width: 100%;
+  padding: 2em;
+}
+
+section article h2{
+  padding-bottom: 1em;
+}
+
+section aside {
+  background: #011C40;
+  width: 25%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+section aside p {
+  color: white;
+}
+
+section aside h3 {
+  color: white;
+
+}
+
+section aside > img {
+  width:70%;
+  align-items: center;
+}
+
+section.gallery {
+  background: #2A6BBF;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  /* Handles vertical positioning */
+  align-items: center;
+  width: 100%;
+  min-height: 90vh;
+  height: auto;
+  padding: 1em;
+}
+
+.gallery div {
+  width:200px;
+  height: 200px;
+  background: transparent;
+  font-size: 4em;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+
+section.gallery > div > img {
+  background: #2A6BBF;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5%;
+}
+
+section.gallery > div > a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  margin-left: 1em;
+}
+
+section.gallery > div > a:hover {
+  color: white;
+  background: #307CBF;
+  position: fixed;
+  padding: 1em;
+}
+
+section.gallery h3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+section#assignments {
+  background: #011C40;
+  color: #BF532C;
+  padding: 1em;
+  margin-bottom: -15em;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+
+
+/* ==== FOOTER INFO ==== */
+
+footer {
+  background: #BF532C;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  /* Handles vertical positioning */
+  align-items: center;
+  width: 100%;
+  min-height: 30vh;
+  height: auto;
+}
