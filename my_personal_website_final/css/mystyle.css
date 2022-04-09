@@ -9,7 +9,7 @@
 /* ==== BODY INFO ==== */
 
 body {
-  font-size: 18px;
+  font-size: 26px;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -133,7 +133,6 @@ section aside {
   justify-content: center;
   align-items: center;
   text-align: center;
-
 }
 
 section aside p {
@@ -160,7 +159,7 @@ section.gallery {
   background: #2A6BBF;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   /* Handles vertical positioning */
   align-items: center;
   width: 100%;
@@ -236,6 +235,24 @@ section#assignments {
   align-items: baseline;
 }
 
+/* Exercise 3 */
+
+#animation-3 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+
+#project-link-1 {
+  text-decoration: none;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
 
 
 /* ==== FOOTER INFO ==== */
@@ -270,6 +287,37 @@ footer {
     bottom: 100px;
   }
 }
+
+/* Hover Spinning Effect */
+
+.animSpin {
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  background: orange;
+  font-size: 50px;
+  font-weight: 700;
+  color:#fff;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  cursor:default;
+  /* position: absolute;
+  right:100px;
+  top:100px; */
+}
+.animSpin:hover {
+  animation: rotateThis 2s infinite linear;
+}
+
+@keyframes rotateThis {
+  0% {transform: rotate(0deg); background: orange;}
+  25% {background: crimson;}
+  50% {background: cadetblue;}
+  75% {background: darkgreen;}
+	100% {transform: rotate(360deg); background: orange;}
+}
+
 
 /* === ANIMATIONS FOR SCROLL BASED INTERACTION === */
 
