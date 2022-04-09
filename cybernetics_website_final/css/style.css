@@ -174,6 +174,7 @@ h1 {
   background-color: #022859;
   min-height: 500px;
   height: auto;
+  /* width: 34.5%; */
   width: 500px;
   position: relative;
   justify-content: center;
@@ -257,6 +258,7 @@ h1 {
 
 #book-section-image-container img {
   width: 40%;
+  height: auto;
   align-items: center;
   align-content: center;
   justify-content: center;
@@ -504,7 +506,6 @@ h1 {
 
 #test-model img {
   width: 400px;
-  /* max-width: 300px; */
 }
 
 #test-model-answers {
@@ -519,8 +520,6 @@ h1 {
   width: 90%;
   height: auto;
   margin-bottom: 3%;
-  /* width: 400px; */
-  /* max-width: 300px; */
 }
 
 #test-solution-button-container {
@@ -657,6 +656,7 @@ h1 {
 
 #figurine-container img {
     width:30%;
+    height: auto;
 }
 
 #music-box-container {
